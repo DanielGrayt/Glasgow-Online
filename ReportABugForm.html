@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Glasgow Online : Report a Bug</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body> 
+	  
+	  <div id="page-wrapper">
+		  
+		  <div id="reportABugPage">
+		
+			  <div id="mainImage">
+				 <img src="images/iStock-467876985.jpg" alt="Report a bug" />
+				<div id="pageTitle">
+					<h1>Report a bug</h1>
+				</div>
+			  </div><!-- Main image end -->
+		
+			<div id="section-template" class="flex-row full-width">
+				<div id="article-block">
+					<div id="article-body">
+						<p>These guidelines explain <strong>how to write a good bug report.</strong> Well-written tasks are more likely to be resolved more quickly.</p>
+
+						<h2>
+							<span id="chapter1" class="anchor-link"></span>
+							<span>Quick recommendations</span>
+						</h2>
+						<ul>
+						  <li>Be precise</li>
+						  <li>Be clear: explain 1) how to reproduce the situation, step by step, without leaving any room for interpretation, 2) expected behavior, 3) actual behavior. In separate sections</li>
+						  <li> Include only one problem per task</li>
+						  <li>Include any relevant links and screenshots</li>
+						</ul>
+
+						<h2 id="chapter2">Before you do anything</h2>
+						<h4>
+							<span id="chapter2a" class="anchor-link"></span>
+							<span>Can you reproduce the issue?</span>
+						</h4>
+						<p>Try to reproduce your bug to see whether it was just a one-time hiccup.</p>
+
+
+						<div style="text-align: center;">
+							<h2 id="chapter3">Reporting a new bug</h2>
+
+							<p>Complete the form and the Glasgow Online team will investigate.</p>
+
+
+							<p>That's all! Thanks for your help to improve Glasgow Online!</p>
+						
+						</div>
+
+						<form action="/Errors/ReportABug" enctype="multipart/form-data" method="post" id="reportABugForm">
+							
+							<hr />
+							<div class="form-field required">
+								<label id="NameLabel" for="Name">Name</label>
+								<input type="text" value="" id="Name" required>
+							</div>
+
+							<div class="form-field">
+								<label>Nature of the bug</label>
+								<select>
+									<option>Weblink not working</option>
+									<option>Can't view/download a resource</option>
+									<option>Login problem</option>
+									<option>Other</option>
+								</select>
+							</div>
+
+							<div class="form-field required">
+								<label id="EmailLabel" for="Email">Email</label>
+								<input type="text" value="" id="Email" required>
+							</div>
+
+							<div class="form-field required">
+								<label id="SubjectLabel" for="Subject">Subject</label>
+								<input type="text" value="" id="Subject" maxlength="150" required>
+							</div>
+
+							<div class="form-field required">
+								<label id="DescriptionLabel" for="Description">Description</label>
+								<textarea id="Description"></textarea>
+							</div>
+
+							<div class="formSubmit">
+								<input class="submitbutton" type="submit" name="Submit" value="Submit">
+							</div>
+						</form>
+					</div><!-- Article body end -->
+
+				</div><!-- Article block end -->
+
+			</div><!-- patch article end -->
+		  
+	  	</div> <!-- End of report a bug page -->
+
+	  </div> <!-- End of page wrapper -->
+	
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

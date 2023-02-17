@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title>Glasgow Online : News Carousel</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- custom styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link type="text/css" rel="Stylesheet" media="screen" href="css/main.css" />
+</head>
+
+<body onresize="myFunction()">
+	<div id="screenSize"></div>
+	<script>
+		function myFunction() {
+		  var w = window.innerWidth;
+		  var h = window.innerHeight;
+		  var txt = "Window size: width=" + w + "px, height=" + h + "px";
+		  document.getElementById("screenSize").innerHTML = txt;
+		}
+		myFunction();
+		</script>
+	
+	
+	<div class="page-wrapper">
+		
+		
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<div id="carousel-indicators-container">	
+				<button id="carousel-toggle"><i class="fas fa-pause"></i></button>
+				<div class="carousel-indicators">
+				  <button data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></button>
+				  <button data-target="#carouselExampleIndicators" data-slide-to="1"></button>
+				</div>
+			</div>
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="d-block w-100" alt="First slide" style="background-image: url('images/NewsImage.png');">
+					<div class="carousel-gradient">
+						<div class="carousel-caption d-none d-md-block">
+						  <p class="carousel-date">23/08/2021</p>
+						  <h1 class="carousel-heading">Art Competition</h1>
+						  <div class="carousel-subheading">
+							  <p>New art competition sees schools tackle hate crime - closing date Thursday 26 September</p>
+						  </div>
+						  <a class="carousel-btn" href="NewsArticle.html" title="Read news story" target="_self">
+							  <span>Read news story</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="d-block w-100" alt="First slide" style="background-image: url('images/Carousel1.png');">
+					<div class="carousel-gradient">
+						<div class="carousel-caption d-none d-md-block">
+						  <p class="carousel-date">23/08/2021</p>
+						  <h1 class="carousel-heading">Raise Awareness</h1>
+						  <div class="carousel-subheading">
+							  <p>New art competition sees schools tackle hate crime - closing date Thursday 26 September</p>
+							</div>
+						  <a class="carousel-btn" href="NewsArticle.html" title="Read news story" target="_self">
+							  <span>Read news story</span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div> <!-- End carousel -->
+		
+	</div><!-- End page wrapper -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

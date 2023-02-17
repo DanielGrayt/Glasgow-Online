@@ -1,0 +1,696 @@
+<!doctype html>
+<html>
+<head>
+    <title>Glasgow Online : Quality Improvement and Leadership</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <!-- custom styles -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" rel="Stylesheet" media="screen" href="css/main.css" />
+</head>
+	
+<body onresize="myFunction()">
+	<div id="screenSize"></div>
+	<script>
+		function myFunction() {
+		  var w = window.innerWidth;
+		  var h = window.innerHeight;
+		  var txt = "Window size: width=" + w + "px, height=" + h + "px";
+		  document.getElementById("screenSize").innerHTML = txt;
+		}
+		myFunction();
+		</script>
+    <header>
+		<div class="d-flex flex-row" id="header-wrapper">
+			
+			<div id="header-left">
+				<a href="index.html" title="Return to the homepage" target="_self">
+					<div class="flex-row">
+						<strong>GLASGOW</strong> ONLINE <div id="header-logo-seperator"></div> <span id="glasgowOnlineLanguages"></span>
+					</div>
+				</a>
+			</div><!-- End header-left -->
+
+			<div id="header-right" class="flex-row">
+				<div id="header-options">
+					<ul id="header-links">
+						<li class="header-link">
+							<a href="https://www.glasgow.gov.uk" title="Go to the Glasgow City Council's website" target="_blank">
+								<div>
+									GCC Website
+								</div>
+							</a>
+						</li>
+						<li class="header-link">
+							<a href="#" title="Go to Connect" target="_blank">
+								<div>
+									Connect
+								</div>
+							</a>
+						</li>
+						<li class="header-link">
+							<a href="#" title="Go to My Portal" target="_blank">
+								<div>
+									My Portal
+								</div>
+							</a>
+						</li>
+						<li class="header-link">
+							<a href="#" title="Submit an incident report" target="_self">
+								<div>
+									Incident Reporting
+								</div>
+							</a>
+						</li>
+					</ul><!-- End header-link-->
+					
+					<form id="header-search" method="post">
+						<input type="text" placeholder="Search...">
+					</form><!-- End header-search-->
+					
+				</div><!-- End header-options-->
+
+				<div id="hamburger">
+					<input id="main-menu-checkbox" type="checkbox">
+
+					<header>
+				  <label for="main-menu-checkbox" class="menu-toggle">
+					<span class="sr-only">Open main menu</span>
+					<span class="fa fa-bars" aria-hidden="true">O</span>
+				  </label>
+
+
+				  <nav id="main-menu" role="navigation" class="main-menu" aria-expanded="false" aria-label="Main menu">
+					<label for="main-menu-checkbox"class="menu-close">
+					  <span class="sr-only">Close main menu</span>
+					  <span class="fa fa-close" aria-hidden="true">X</span>
+					</label>
+					<ul id="main-menu-buttons">
+					  
+					  <li><span>Early Learning and Childcare</span>
+						<div>
+							<h1>Early Learning and Childcare</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(EarlyLearningAndChildCare).html" title="Go to Early Learning and Childcare's main page" target="_self"><span>Main page</span></a></li>  
+							  <li><a href="#" title="Go to Early Learning and Childcare's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							  <li><a href="SectionTemplate(EarlyLearningAndChildCare).html#accordionExample" title="View all Early Learning and Childcare's Key Documents" target="_self"><span>Key Documents</span></a></li>
+							  <li><a href="https://www.gfis.org.uk" title="Go to Early Learning and Childcare's external website" target="_blank"><span>External website</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Early Learning and Childcare's Glasgow Family Information Service page" target="_self"><span>Glasgow Family Informaion Service</span></a></li>
+							</ul>
+						</div>
+					  </li>
+						<li><span>Education Support Services</span>
+						<div>
+							<h1>Education Support Services</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(EducationSupportServices).html" title="Go to Education Support Services' main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Education Support Services' Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Education Support Services' Enrollment page" target="_self"><span>Enrollment</span></a></li>
+								<li><a href="#" title="Go to Education Support Services' Goverance and Health & Safety page" target="_self"><span>Goverance and Health &amp; Safety</span></a></li>
+								<li><a href="#" title="Go to Education Support Services' ICT page" target="_self"><span>ICT</span></a></li>
+								<li><a href="#" title="Go to Education Support Services' Processes, Training & Resources page" target="_self"><span>Processes, Training &amp; Resources</span></a></li>
+								<li><a href="SectionTemplate(Procurement).html" title="Go to Education Support Services' Procurement page" target="_self"><span>Procurement</span></a></li>
+								<li><a href="#" title="Go to Education Support Services' Property (PALS) page" target="_self"><span>Property (PALS)</span></a></li>
+								<li><a href="#" title="Go to Education Support Services' Training page" target="_self"><span>Training</span></a></li>
+							</ul>
+						  </div>
+					  </li>
+						<li><span>Finance and Administration Services</span>
+						<div>
+							<h1>Finance and Administration Services</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(FinanceAndAdministrationServices).html" title="Go to Finance and Administration Services' main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Finance and Administration Services' Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Finance and Administration Services' School Budget page" target="_self"><span>School Budget</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' DSM page" target="_self"><span>DSM</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' Reporting page" target="_self"><span>Reporting</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' Enrollment and Placing and Placing Request Advice page" target="_self"><span>Enrollment and Placing and Placing Request Advice</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' Administration Support page" target="_self"><span>Administration Support</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' Property Advice page" target="_self"><span>ICT Advice</span></a></li>
+								<li><a href="#" title="Go to Finance and Administration Services' ICT Advice page" target="_self"><span>ICT Advice</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Glasgow's Improvement Challenge</span>
+						<div>
+							<h1>Glasgow's Improvement Challenge</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(GlasgowsImprovementChallenge).html" title="Go to Glasgow's Improvement Challenge's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Glasgow's Improvement Challenge's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Glasgow's Improvement Challenge's Literacy for All page" target="_self"><span>Literacy for All</span></a></li>
+								<li><a href="#" title="Go to Glasgow's Improvement Challenge's Glasgow Counts page" target="_self"><span>Glasgow Counts</span></a></li>
+								<li><a href="SectionTemplate(CREATE).html" title="Go to Glasgow's Improvement Challenge's CREATE page" target="_self"><span>CREATE</span></a></li>
+								<li><a href="SectionTemplate(STEM).html" title="Go to Glasgow's Improvement Challenge's STEM page" target="_self"><span>STEM</span></a></li>
+								<li><a href="#" title="Go to Glasgow's Improvement Challenge's Family Learning page" target="_self"><span>Family Learning</span></a></li>
+								<li><a href="#" title="Go to Glasgow's Improvement Challenge's PEPASS page" target="_self"><span>PEPASS</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Health and Safety</span>
+						<div>
+							<h1>Health and Safety</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(HealthAndSafety).html" title="Go to Health and Safety's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Health and Safety's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							  <li><a href="SectionTemplate(HealthAndSafety).html#accordionExample" title="View all Health & Safety's Key Documents" target="_self"><span>Key Documents</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Health and Safety's Policy and Strategy Document page" target="_self"><span>Policy and Strategy Document</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Management Standards page" target="_self"><span>Management Standards</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Risk Assessment page" target="_self"><span>Risk Assessment</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Codes of Practice page" target="_self"><span>Codes of Practice</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Safety Flashes page" target="_self"><span>Safety Flashes</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Training page" target="_self"><span>Training</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Calendar page" target="_self"><span>Calendar</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's Fire Precautions Register page" target="_self"><span>Fire Precautions Register</span></a></li>
+								<li><a href="#" title="Go to Health and Safety's News page" target="_self"><span>News</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Human Resources</span>
+						<div>
+							<h1>Human Resources</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(HumanResources).html" title="Go to Human Resources' main page" target="_self"><span>Main page</span></a></li>
+								<li><a href="ContactUs-HumanResources.html" title="Go to Human Resources' Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Human Resources' LNCT page" target="_self"><span>LNCT</span></a></li>
+								<li><a href="SectionTemplate(ManagementCirculars).html" title="Go to Human Resources' Management Circulars page" target="_self"><span>Management Circulars</span></a></li>
+								<li><a href="#" title="Go to Human Resources' Professional Learning page" target="_self"><span>Professional Learning</span></a></li>
+								<li><a href="#" title="Go to Human Resources' Managing Critical Incidents page" target="_self"><span>Managing Critical Incidents</span></a></li>
+								<li><a href="#" title="Go to Human Resources' Complaints Procedures page" target="_self"><span>Complaints Procedures</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Learning for Sustainability</span>
+						<div>
+							<h1>Learning for Sustainability</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(LearningForSustainability).html" title="Go to Learning for Sustainability's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Learning for Sustainability's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Learning for Sustainability's Global Citizens page" target="_self"><span>Global Citizens</span></a></li>
+								<li><a href="#" title="Go to Learning for Sustainability's SDE page" target="_self"><span>SDE</span></a></li>
+								<li><a href="#" title="Go to Learning for Sustainability's Outdoor Learning page" target="_self"><span>Outdoor Learning</span></a></li>
+								<li><a href="#" title="Go to Learning for Sustainability's UNICEF page" target="_self"><span>UNICEF</span></a></li>
+								<li><a href="#" title="Go to Learning for Sustainability's SDGs page" target="_self"><span>SDGs</span></a></li>
+								<li><a href="#" title="Go to Learning for Sustainability's Partners page" target="_self"><span>Partners</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Learning Teaching and Assessment</span>
+						<div>
+							<h1>Learning Teaching and Assessment</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(LearningTeachingAndAssessment).html" title="Go to Learning Teaching and Assessment's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Useful Links page" target="_self"><span>Useful Links</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Social Inclusions (SOS) page" target="_self"><span>Social Inclusions (SOS)</span></a></li>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Digital Learning page" target="_self"><span>Digital Learning</span></a></li>
+								<li><a href="SectionTemplate(HealthAndWellbeing).html" title="Go to Learning Teaching and Assessment's Health and Wellbeing page" target="_self"><span>Health and Wellbeing</span></a></li>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's IMP - Our Classrooms page" target="_self"><span>IMP - Our Classrooms</span></a></li>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Languages page" target="_self"><span>Languages</span></a></li>
+								<li><a href="#" title="Go to Learning Teaching and Assessment's Learning for Sustainability page" target="_self"><span>Learning for Sustainability</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Quality Improvement and Leadership</span>
+						<div>
+							<h1>Quality Improvement and Leadership</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(QualityImprovementAndLeadership).html" title="Go to Quality Improvement and Leadership's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Quality Improvement and Leadership's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Quality Improvement and Leadership's Leadership page" target="_self"><span>Leadership</span></a></li>
+								<li><a href="#" title="Go to Quality Improvement and Leadership's Supporting Improvement page" target="_self"><span>Supporting Improvement</span></a></li>
+								<li><a href="#" title="Go to Quality Improvement and Leadership's EDIS page" target="_self"><span>EDIS</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Performance, Planning & Research</span>
+						<div>
+							<h1>Performance, Planning & Research</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(ResearchAndReporting).html" title="Go to Performance, Planning & Research's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Performance, Planning & Research's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Performance, Planning & Research's Performance & Research page" target="_self"><span>Performance &amp; Research</span></a></li>
+								<li><a href="#" title="Go to Performance, Planning & Research's Reporting page" target="_self"><span>Reporting</span></a></li>
+								<li><a href="#" title="Go to Performance, Planning & Research's SEEMIS page" target="_self"><span>SEEMIS</span></a></li>
+								<li><a href="#" title="Go to Performance, Planning & Research's Governance page" target="_self"><span>Governance</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					  <li><span>Safeguarding and Inclusion</span>
+						<div>
+							<h1>Safeguarding and Inclusion</h1>
+						  	<h4>Top Tasks:</h4>
+							<ul>
+							  <li><a href="SectionTemplate(SafeguardingAndInclusion).html" title="Go to Safeguarding and Inclusion's main page" target="_self"><span>Main page</span></a></li>  
+								<li><a href="#" title="Go to Safeguarding and Inclusion's Team Structure and Contact Details page" target="_self"><span>Team Structure and Contact Details</span></a></li>
+							</ul>
+							<h4>Service Pages:</h4>
+							<ul>
+								<li><a href="#" title="Go to Safeguarding page" target="_self"><span>Safeguarding</span></a></li>
+								<li><a href="#" title="Go to Inclusion page" target="_self"><span>Inclusion</span></a></li>
+							</ul>
+						</div>
+					  </li>
+					</ul>
+				  </nav>
+				  <label for="main-menu-checkbox"
+					 class="backdrop"
+					 tabindex="-1"
+					 aria-hidden="true" hidden></label>
+				</header>
+				</div><!-- End hamburger-->
+				
+			</div><!-- End header-right-->
+			
+		</div><!-- End header wrapper-->
+
+	</header> <!-- End header bar-->
+    	
+	
+	<div class="page-wrapper">
+		
+		
+		<div id="breadcrumbs" class="flex-row">
+			
+			<div id="breadcrumbs-trail" class="left">
+				<a href="index.html" title="Homepage" target="_self">Homepage</a> &#62; Quality Improvement and Leadership
+			</div>
+			
+			<button class="right" id="return-page" onclick="window.history.back();">Return To Previous Page</button>
+		</div>
+		
+		
+		<div id="section-template" class="flex-row">
+			
+			
+			<div id="news-left" class="left">
+				
+				<div id="pageLastUpdated">Last updated by aReid 27/06/2019</div>
+				<h1 class="heading1">Quality Improvement and Leadership</h1>
+				
+				<div id="news-body">
+					<p>Glasgow's Supporting Improvement paper articulates the links between current national and local frameworks, policies and initiatives; focusing on continuous improvement within Education. Self-evaluation is the first step in the process of achieving self-improvement in schools*.</p>
+					
+					<p>Our Supporting Improvement documentation is designed to focus on what works/matter to secure the highest quality outcomes for children and young people, with an unrelenting focus on learning and teaching. It aligns with the new <a href="#">National Improvement Hub</a> and Glasgow's Local Improvement Groups bringing together a range of frameworks and improvement tools to support collaborative approaches and the sharing of epertise.<br>
+					These will be used by learners, parents/carers, partners and practitioners, at all levels, enabling all schools to have a shared understanding of effective practice and next steps for improvement.</p>
+					
+					<p>Self-evaluation activity undertaken within schools, in partnership with all stakeholders, is the responsibility of all staff. It is at the heart of school improvement. As collegiatlity is a key element of the national teachers' agreement, it is right that collegiatlity and partnership is at the core of sound educational practice and management, and is an explicit feature of Securing Improvement. Key messages apply across all sectors and underpin self-evaluation for school self-improvement.</p>
+					
+					<p>Securing Improvement focuses explicitly on Glasgow's Improvement Challenge (GIC) which takes a holistic approach to taking forward improvements for all children, young people and families. Our direction of travel aligns well with government priorities, whilst maintaining our commitment to developing these within the context of Glasgow learners. We are committed to closing the attainment gap, giving our young people the widest range of opportunities to achive, to tackling the effects of poverty and disadvantage and the potentially negative impact this can have for children and young people.</p>
+					
+					<p>Securing Improvement is one part of Glasgow City Council's strategy to meet its statutory responsibilities as outlined in the <strong>Education (Scotland) Act 2016</strong>, to provide education in a way that is designed to reduce inequality of outcomes for learners experiencing socio-economic disadvantage.</p>
+					
+					<p><strong>Our reviewed priorities are embedded within Securing Improvement, reflecting our aspirations and our continual focus on what is important to improve the lives of our children:</strong></p>
+					
+					<p><strong>Raising attainment and achievement through Glagow's Improvement Challenge 2015-2020</strong></p>
+					
+					<p><strong>Chontinue to improve how we meet the learning and care needs of children before they go to school and as they progress through school, including how we support their familites; and</strong></p>
+					
+					<p><strong>As we move towards a Nurturing City, continue to improve how we meet the needs of children and young people, particularly with additional support needs</strong></p>
+					
+					<p><strong>Make best use of our finance and resources to help ensure the best outcomes possible for our children and young people</strong></p>
+
+				</div>
+				
+				<!--<img id="sectionImage" alt="" />-->
+				
+				
+			<!-- Key Documents -->
+			<div class="accordion Downloads" id="accordionExample">
+				<h1 class="heading1">Key Documents</h1>
+			  <div class="card">
+				<div class="card-header" id="headingOne">
+					<span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<p class="right">Last updated 27/06/2019 <strong>&#62;</strong></p> 
+						Inspection and review
+					</span>
+				</div>
+
+				<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+				  <div class="card-main-content">
+					  <div class="card-summary">
+						 <p>Blurb about what Inspection and review documents users will find below:</p>
+					  </div>
+					  <div class="card-group">
+						  <!--<div class="card-group-title">
+							 STEM
+						  </div>-->
+						  <ul class="card-group-links">
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>Equalities Self evaluation tool</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>Supporting the HMI Process</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>Child Protection and Safeguarding Support Document</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>Children and Young People Definitions</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>Children and Young People Support for Schools</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>EdIS HMI support-Before inspection</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Report a School Incident" target="_blank">
+									  <span>The Inspection Process Support Document</span>
+								  </a>
+							  </li>
+						  </ul>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+				
+			  <div class="card">
+				<div class="card-header" id="headingTwo">
+					<span data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<p class="right">Last updated 13/07/2019 <strong>&#62;</strong></p> 
+						Templates
+					</span>
+				</div>
+
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				  <div class="card-main-content">
+					  <div class="card-summary">
+						 <p>Blurb about what Template documents users will find below:</p>
+					  </div>
+					  <div class="card-group">
+						  <!--<div class="card-group-title">
+							 STEM
+						  </div>-->
+						  <ul class="card-group-links">
+							  <li class="download-link-item">
+								  <a href="#" title="Download Incident Reporting Schools User Guide" target="_blank">
+									  <span>Education Services Priorities</span>
+								  </a>
+							  </li>
+							  <li class="download-link-item">
+								  <a href="#" title="Download Incident Reporting Schools User Guide" target="_blank">
+									  <span>Download School Managers Guide</span>
+								  </a>
+							  </li>
+						  </ul>
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+				
+			</div> <!-- End news left -->
+			
+			
+			<div class="right">
+				<div class="right-content-wrapper">
+					<h4>Top Tasks</h4>
+					<ul id="top-tasks-links">
+						<li class="contact-link-item">
+							<a href="#" title="Go to Service name Team Structure and Contact Details page" target="_self">Team Structure and Contact Details</a>
+						</li>
+						<li class="download-link-item">
+							<a href="#accordionExample" title="View all Service name Key Documents" target="_self">Key Documents</a>
+						</li>
+						<!--<li class="external-link-item">
+							<a href="#" title="Go to Human Resources's external website" target="_blank">External website</a>
+						</li>-->
+						<!--<li class="external-link-item">
+							<a href="#">Useful links</a>
+						</li>-->
+					</ul>
+				</div>
+			
+				<div class="right-content-wrapper">
+					<h4>More Information</h4>
+					<ul id="more-information-links">
+						<li>
+							<a href="SectionTemplate(Leadership).html" title="Go to Leadership page" target="_self">Leadership</a>
+						</li>
+						<li>
+							<a href="#" title="Go to Supporting Improvement page" target="_self">Supporting Improvement</a>
+						</li>
+						<li>
+							<a href="#" title="Go to EdIS page" target="_self">EdIS</a>
+						</li>
+						<li>
+							<a href="#" title="Go to School Handbooks page" target="_self">School Handbooks</a>
+						</li>
+					</ul>
+				</div>
+			</div> <!-- End news right -->
+			
+
+		</div> <!-- End news body -->
+		
+		<div class="most-visited-pages">
+			<a class="most-visited-pages-btn" href="NewsList.html" title="Go to GO News page" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/GONewsIcon.png" alt="GO News icon" />
+					</div>
+					<p class="most-visited-pages-title">GO News</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="index.html#schoolSearchTile" title="Search for a school" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/SchoolSearchIcon.png" alt="School Search icon" />
+					</div>
+					<p class="most-visited-pages-title">School Search</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="SectionTemplate(HealthAndSafety).html" title="View the latest Health & Safety advise" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/HealthAndSafetyIcon.png" alt="Health & Safety icon" />
+					</div>
+					<p class="most-visited-pages-title">Health &amp; Safety</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="SectionTemplate(ManagementCirculars).html" title="Go to Human Resources' Management Circulars page" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/ManagersCircularsIcon.png" alt="Managers Circulars icon" />
+					</div>
+					<p class="most-visited-pages-title">Managers Circulars</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="#" title="Look up the Education Directory" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/EducationDirectoryIcon.png" alt="Education Directory icon" />
+					</div>
+					<p class="most-visited-pages-title">Education Directory</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="SectionTemplate(StaffDevelopment).html" title="Go to Staff Development page" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/StaffDevelopmentIcon.png" alt="Staff Development icon" />
+					</div>
+					<p class="most-visited-pages-title">Staff Development</p>
+				</div>
+			</a>
+			<a class="most-visited-pages-btn" href="../SectionTemplate(DigitalLearning).html" title="View the latest Digital Learning" target="_self">
+				<div>
+					<div>
+						<img class="most-visited-pages-icon" src="images/DigitalLearningIcon.png" alt="Digital Learning icon" />
+					</div>
+					<p class="most-visited-pages-title">Digital Learning</p>
+				</div>
+			</a>
+		</div> <!-- End most frequest pages -->
+		
+		
+	</div> <!-- End page wrapper -->
+	
+	<footer>
+		
+		<div id="footer-warapper" class="flex-row">
+			
+			<div class="footer-column">
+				
+				<div class="footer-column-header">GCC Network</div>
+				
+				<ul class="footer-links">
+					
+					<li><a href="#" title="Visit the Glasgow City Council website" target="_blank">Glasgow City Council</a></li>
+					<li><a href="#" title="Visit the PECOS website" target="_blank">PECOS</a></li>
+					<li><a href="#" title="Visit the Learn To Work website" target="_blank">Learn To Work</a></li>
+					<li><a href="#" title="Visit the GLOW website" target="_blank">GLOW</a></li>
+					<li><a href="#" title="Visit the Glasgow Blogs website" target="_blank">Glasgow Blogs</a></li>
+					<li><a href="#" title="Visit the MLOL website" target="_blank">MLOL</a></li>
+					<li><a href="#" title="Visit the ICE website" target="_blank">ICE</a></li>
+					<li><a href="#" title="Visit the SQAl website" target="_blank">SQA</a></li>
+					<li><a href="#" title="Visit the CPD Manager website" target="_blank">CPD Manager</a></li>
+					
+				</ul>
+				
+			</div>
+			
+			<div class="footer-column">
+				
+				<div class="footer-column-header">Services and Information</div>
+				
+				<ul class="footer-links">
+					
+					<li><a href="#" title="Go to Human Resources" target="_self">Human Resources</a></li>
+					<li><a href="#" title="Go to Health & Safety" target="_self">Health &amp; Safety</a></li>
+					<li><a href="#" title="Go to Early Learning & Childcare" target="_self">Early Learning &amp; Childcare</a></li>
+					<li><a href="#" title="Go to Glasgow's Improvement Challenge" target="_self">Glasgow's Improvement Challenge</a></li>
+					<li><a href="#" title="Go to Learning Teaching & Assessment" target="_self">Learning Teaching &amp; Assessment</a></li>
+					<li><a href="#" title="Go to Quality Improvement & Leadership" target="_self">Quality Improvement &amp; Leadership</a></li>
+					<li><a href="#" title="Go to Finance and Resources" target="_self">Finance and Resources</a></li>
+					<li><a href="#" title="Go to Safeguarding and Inclusion" target="_self">Safeguarding and Inclusion</a></li>
+					<li><a href="#" title="Go to Performance, Planning & Research" target="_self">Performance, Planning & Research</a></li>
+					
+				</ul>
+				
+			</div>
+			
+			<div class="footer-column">
+				
+				<div class="footer-column-header">Connect with GCC</div>
+				
+				<ul class="footer-links">
+					
+					<li><a href="#" title="Follow Glasgow Online on Twitter" target="_blank" class="twitter">@Glasgow Online</a></li>
+					<li><a href="#" title="Follow STEM Glasgow on Twitter" target="_blank" class="twitter">@STEMGlasgow</a></li>
+					<li><a href="#" title="Follow MalawiLOL on Twitter" target="_blank" class="twitter">@MalawiLOL</a></li>
+					<li><a href="#" title="Follow Glasgow City Council on Twitter" target="_blank" class="twitter">@GlasgowCityCouncil</a></li>
+					<li><a href="#" title="Follow Maureen McKenna on Twitter" target="_blank" class="twitter">@MaureenMcKenna</a></li>
+					<li><a href="#" title="Follow MalawiLOL on Instagram" target="_blank" class="instagram">@MalawiLOL</a></li>
+					<li><a href="#" title="Follow MalawiLOL on Facebook" target="_blank" class="facebook">MalawiLOL</a></li>
+					<li><a href="#" title="Follow Glasgow City Council on Facebook" target="_blank" class="facebook">Glasgow City Council</a></li>
+					<li><a href="#" title="Connect with all of GCC" target="_blank" class="">Connect with all of GCC</a></li>
+					
+				</ul>
+				
+			</div>
+			
+		</div> <!-- End footerwrapper -->
+		
+		<div id="maintance-links" class="flex-row">
+			<ul class="left">
+				<li><a href="#" title="" target="self">Cookie Policy</a></li>
+				<li><a href="#" title="" target="self">Contact Administrator</a></li>
+			</ul>
+			
+			<div class="right">
+				<div id="footer-logos">
+					<div class="footer-logo">
+						<a href="#" title="Go to Glasgow City Council website" target="_blank">
+							<img src="images/GCCLogoBlack.png" alt="Glasgow City Council logo" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer-end">
+			<p>© <span id="year"></span> Glasgow City Council</p>
+		</div>
+	
+	</footer> <!-- End footer -->
+	
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script>
+		$('.carousel').carousel('pause')
+	</script>
+	<script>
+		var d = new Date();
+		var n = d.getFullYear();
+		document.getElementById("year").innerHTML = n;
+	</script>
+	
+	<script>
+		var languages = [
+			'<strong>GLASCHU</strong>  AIR-LOIDHNE',  // Gaelic
+			'<strong>GLASGOW</strong>  AR LÍNE',	 	 // Irish
+			'<strong>GLASGOW</strong>  EN LIGNE',	 // French
+			'<strong>GLASGOW</strong>  EN LÍNEA',	 // Spanish
+			'<strong>格拉斯哥</strong>在线'			 // Chinese
+		];
+
+		/*(function displayClass(i) {
+			$('#glasgowOnlineLanguages').append(languages[i]).fadeIn("slow", function() {
+				$(this).delay(600).fadeOut(1000, function() {
+					displayClass((i + 1) % languages.length);
+				});
+			});
+		})(0);*/
+
+		(function displayLanguage(i) {
+			$("#glasgowOnlineLanguages").html(languages[i]);
+			setTimeout(function() {
+				displayLanguage((i + 1) % languages.length);
+			}, 3000);
+		})(0);
+	</script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,1959 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+
+    <title>Glasgow Online : News : Submit a Story</title>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+
+    <!-- custom styles -->
+
+    <script src="https://kit.fontawesome.com/eb97475af1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+
+    <link type="text/css" rel="Stylesheet" media="screen" href="css/main.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+
+    <!-- Fav icons to be added here -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/content/images/Favicons/apple-touch-icon.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/content/images/Favicons/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/content/images/Favicons/favicon-16x16.png">
+
+    <link rel="manifest" href="/content/images/Favicons/site.webmanifest">
+
+    <link rel="mask-icon" href="/content/images/Favicons/safari-pinned-tab.svg" color="#00854b">
+
+    <link rel="shortcut icon" href="/content/images/Favicons/favicon.ico">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <meta name="msapplication-config" content="/content/images/Favicons/browserconfig.xml">
+
+    <meta name="theme-color" content="#00854b">
+
+
+
+    
+
+    <!--<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+
+    <script src="/Content/ckeditor/ckeditor.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/content/scripts/jquery.validate.min.js"></script>
+
+    <script type="text/javascript" src="/content/scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <script type="text/javascript" src="/content/scripts/additional-methods.js"></script>
+
+    <link type="text/css" rel="Stylesheet" media="screen" href="/content/css/glyphicons.css" />
+
+    <link type="text/css" rel="Stylesheet" media="screen" href="/content/css/Validation.css" />
+
+    <link type="text/css" rel="Stylesheet" media="screen" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+-->
+
+
+
+
+    <!-- Google Tag Manager -->
+
+    <!--<script>
+
+        (function (w, d, s, l, i) {
+
+            w[l] = w[l] || []; w[l].push({
+
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
+        })(window, document, 'script', 'dataLayer', 'GTM-MXPTPNJ');</script>-->
+
+    <!-- End Google Tag Manager -->
+
+
+
+</head>
+
+<body>
+
+
+            <div id="breadcrumbs" class="flex-row" style="display:none;">
+				<div class="breadcrumbs-wrapper flex-row">
+
+
+
+					<div id="breadcrumbs-trail" class="left">
+
+						<a href="/" title="Go back to Glasgow Online Homepage" target="_self">Homepage</a>
+
+
+
+		&#62; <a href="/News" title="Go to GO News page">Go News</a> &#62; Submit a Story
+
+
+
+					</div>
+
+
+
+					<button class="right" id="return-page" onclick="window.history.back();">Return To Previous Page</button>
+
+				</div>
+				
+		</div>
+
+
+
+    <div class="page-wrapper" >
+
+
+
+        
+
+
+
+
+
+
+
+<div id="section-template" class="flex-row submitAStory">
+
+
+
+
+
+    <div class="left">
+
+        <div id="page-intro">
+
+            <h1 id="page-title">Submit a Story</h1>
+
+        </div>
+
+
+
+        <p>To submit a News Story please enter all of the details below and then press the button at the bottom of the form.</p>
+
+
+
+
+
+<form action="/News/SubmitStory" enctype="multipart/form-data" method="post">    <div id="categoryform" class="formholder">
+
+        <div class="validation-summary-valid" data-valmsg-summary="true"><span>Please fix the following errors:</span>
+
+<ul><li style="display:none"></li>
+
+</ul></div>
+
+        <ul class="form">
+			
+			<h3>Contact information</h3>
+			
+			<p>Enter your details for creditation and incase we need to contact you with any amendments</p>
+
+            <li class="floatleft">
+
+                <label for="ContactName">Contact Name<span class="field-validation-valid" data-valmsg-for="ContactName" data-valmsg-replace="false">*</span></label>
+				<br />
+
+                <input data-val="true" data-val-maxlength="Contact Name too long" data-val-maxlength-max="100" data-val-required="Enter a Contact Name" id="ContactName" name="ContactName" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="JobTitle">Job Title<span class="field-validation-valid" data-valmsg-for="JobTitle" data-valmsg-replace="false">*</span></label>
+				<br />
+
+                <input data-val="true" data-val-maxlength="JobTitle too long" data-val-maxlength-max="100" data-val-requiredif="Enter a Job Title" data-val-requiredif-dependentproperty="PublicForm" data-val-requiredif-dependentvalue="True" data-val-requiredif-operator="EqualTo" id="JobTitle" name="JobTitle" type="text" value="" />
+
+                
+
+            </li>
+
+
+            <li class="clear"></li>
+
+
+
+            <li class="floatleft">
+
+                <label for="ContactNumber">Contact Number<span class="field-validation-valid" data-valmsg-for="ContactNumber" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" data-val-maxlength="Contact Number too long" data-val-maxlength-max="100" data-val-required="Enter a Contact Number" id="ContactNumber" name="ContactNumber" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="EmailAddress">Email Address<span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" data-val-maxlength="Email Address too long" data-val-maxlength-max="100" data-val-required="Enter an Email Address" id="EmailAddress" name="EmailAddress" type="text" value="" />
+
+                
+
+            </li>
+
+
+            <li class="clear"></li>		
+
+
+
+            <li class="floatleft">
+				
+
+				<label for="Author">Where is the story coming from?<span class="field-validation-valid" data-valmsg-for="Author" data-valmsg-replace="false">*</span></label>
+
+				<div>
+
+					<input data-val="true" data-val-required="Select an Author" id="Author" name="Author" type="radio" value="School" /><span class="radioText">School</span>
+
+					<input id="Author" name="Author" type="radio" value="GCC" /><span class="radioText">GCC</span>
+
+					
+
+            	</div>
+				
+			</li>
+
+            <li class="floatright schools">
+
+                <label for="SchoolId">School</label><br />
+
+                <select style=" width:100%;" class="js-example-basic-single" data-val="true" data-val-number="The field SchoolId must be a number." id="SchoolId" name="SchoolId"><option value="">Please Select</option>
+
+<option value="15">Abercorn Secondary School </option>
+
+<option value="16">Acredyke Nursery </option>
+
+<option value="17">Adelphi Nursery </option>
+
+<option value="18">Alexandra Parade Primary School</option>
+
+<option value="19">All Saints Secondary School</option>
+
+<option value="20">Anderston Primary School</option>
+
+<option value="21">Annette Street Primary School</option>
+
+<option value="22">Antonine Primary School</option>
+
+<option value="23">Ardnahoe Nursery </option>
+
+<option value="24">Arnwood Nursery </option>
+
+<option value="25">Ashpark Primary School </option>
+
+<option value="26">Ashton Secondary School </option>
+
+<option value="27">Aultmore Park Language and Communication Resource</option>
+
+<option value="28">Aultmore Park Primary School</option>
+
+<option value="29">Avenue End Primary School</option>
+
+<option value="30">Balornock Primary School</option>
+
+<option value="31">Bankhead Primary School</option>
+
+<option value="32">Bannerman High School</option>
+
+<option value="33">Bannerman Language and Communication Resource</option>
+
+<option value="34">Barlanark Family Learning Centre</option>
+
+<option value="35">Barmulloch Primary School </option>
+
+<option value="36">Battlefield Primary School</option>
+
+<option value="37">Beechwood Nursery </option>
+
+<option value="38">Belhaven Nursery </option>
+
+<option value="39">Bellahouston Academy</option>
+
+<option value="40">Bellrock Nursery </option>
+
+<option value="41">Benview Early Years Centre</option>
+
+<option value="42">Blackfriars Primary School </option>
+
+<option value="43">Blairdardie Primary School</option>
+
+<option value="44">Bonnybroom Nursery </option>
+
+<option value="45">Bridgeton Family Learning Centre</option>
+
+<option value="46">Broomhill Primary School </option>
+
+<option value="47">Broomlea Primary School</option>
+
+<option value="48">Broomloan Nursery </option>
+
+<option value="49">Buchlyvie Nursery</option>
+
+<option value="50">Budhill Family Learning Centre </option>
+
+<option value="51">Burnbrae Children&#39;s Centre</option>
+
+<option value="52">Cadder Primary School</option>
+
+<option value="53">Caldercuilt Nursery </option>
+
+<option value="54">Caldercuilt Primary School </option>
+
+<option value="55">Caledonia Language and Communication Resource</option>
+
+<option value="56">Caledonia Primary School</option>
+
+<option value="57">Camstradden Primary School</option>
+
+<option value="58">Cardinal Winning Secondary</option>
+
+<option value="59">Cardonald Primary School</option>
+
+<option value="60">Carmichael Nursery </option>
+
+<option value="61">Carmunnock Primary School</option>
+
+<option value="62">Carmyle Primary School and Nursery Class</option>
+
+<option value="63">Carntyne Primary School</option>
+
+<option value="64">Cartvale Secondary School </option>
+
+<option value="65">Castlemilk Day Nursery</option>
+
+<option value="66">Castlemilk Family Learning Centre</option>
+
+<option value="67">Castlemilk High School</option>
+
+<option value="68">Castleton Primary School</option>
+
+<option value="69">Chesters Nursery </option>
+
+<option value="70">Chirnsyde Primary School</option>
+
+<option value="71">Cleeves Primary School</option>
+
+<option value="72">Cleveden Secondary School</option>
+
+<option value="73">Cloan Nursery </option>
+
+<option value="74">Cloverbank Nursery </option>
+
+<option value="75">Clyde Primary School</option>
+
+<option value="76">Corpus Christi Primary School</option>
+
+<option value="77">Cowcaddens Day Nursery</option>
+
+<option value="78">Craigbank Nursery </option>
+
+<option value="79">Craigton Primary School and Nursery Class </option>
+
+<option value="80">Cranhill Primary School</option>
+
+<option value="81">Cranstonhill Nursery</option>
+
+<option value="82">Croftcroighn Primary School </option>
+
+<option value="83">Croftfoot Primary School</option>
+
+<option value="84">Crookston Castle Primary School</option>
+
+<option value="85">Crookston Early Years Centre</option>
+
+<option value="86">Cuthbertson Primary School and Nursery Class</option>
+
+<option value="87">Dalmarnock Primary School</option>
+
+<option value="88">Dance School of Scotland</option>
+
+<option value="89">Darnley Primary School</option>
+
+<option value="90">Darnley Visual Impairment Unit (Primary) </option>
+
+<option value="91">Deanpark Nursery</option>
+
+<option value="92">Dennistoun Early Years Centre</option>
+
+<option value="93">Drumchapel Early Years Centre</option>
+
+<option value="94">Drumchapel Family Learning Centre</option>
+
+<option value="95">Drumchapel High School</option>
+
+<option value="96">Drumchapel Language and Communication Resource</option>
+
+<option value="97">Drummore Primary School</option>
+
+<option value="98">Dunard Primary School and Nursery Class</option>
+
+<option value="99">Duntarvie Pre-School Assessment and Development Centre</option>
+
+<option value="100">Eastbank Academy</option>
+
+<option value="101">Eastbank Primary School</option>
+
+<option value="102">Eastmuir Primary School </option>
+
+<option value="103">Eastwood Nursery</option>
+
+<option value="104">Elie Street Nursery </option>
+
+<option value="105">Elmcroft Nursery </option>
+
+<option value="106">Elmvale Primary School and Nursery Class</option>
+
+<option value="107">Fasque Family Centre</option>
+
+<option value="108">Festival Park Day Nursery</option>
+
+<option value="109">Fortrose Nursery </option>
+
+<option value="110">Garnetbank Primary School</option>
+
+<option value="111">Garrowhill Primary School</option>
+
+<option value="112">Glasgow Gaelic School Annexe / Sgoil Gh&#224;idhlig Ghlaschu (Ath-thaigh) </option>
+
+<option value="113">Glasgow Gaelic School/Sgoil Ghaidhlig Ghlaschu (Nursery) </option>
+
+<option value="114">Glasgow Gaelic School/Sgoil Ghaidhlig Ghlaschu (Primary)</option>
+
+<option value="115">Glasgow Gaelic School/Sgoil Ghaidhlig Ghlaschu (Secondary)</option>
+
+<option value="116">Glasgow School of Sport</option>
+
+<option value="117">Glendale Gaelic Primary School - Bunsgoil Gh&#224;idhlig Ghleann Dail</option>
+
+<option value="118">Glendale Primary School</option>
+
+<option value="119">Golfhill Primary School</option>
+
+<option value="120">Govan Family Learning Centre</option>
+
+<option value="121">Govan Gaelic Primary/Bun-sgoil Gh&#224;idhlig Bhaile a&#39; Ghobhainn</option>
+
+<option value="122">Govan High School</option>
+
+<option value="123">Govan Language and Communication Resource</option>
+
+<option value="124">Govanhill Nursery </option>
+
+<option value="125">Gowanbank Primary School and Language and Communication Resource</option>
+
+<option value="126">Greentrees Nursery </option>
+
+<option value="127">Greenview Learning Centre</option>
+
+<option value="128">Haghill Park Primary School and Nursery Class</option>
+
+<option value="129">Hamiltonhill Family Learning Centre</option>
+
+<option value="130">Hampden Primary School </option>
+
+<option value="131">Hazelwood School</option>
+
+<option value="132">Helenslea Nursery </option>
+
+<option value="133">Highpark Language and Communication Resource</option>
+
+<option value="134">Highpark Primary School</option>
+
+<option value="135">Hillhead High School</option>
+
+<option value="136">Hillhead Primary School</option>
+
+<option value="137">Hillington Primary School</option>
+
+<option value="138">Hillpark Language and Communication Resource</option>
+
+<option value="139">Hillpark Secondary School</option>
+
+<option value="140">Hilltop Nursery </option>
+
+<option value="141">Hollybrook School</option>
+
+<option value="142">Holy Cross Primary School</option>
+
+<option value="143">Holyrood Secondary School</option>
+
+<option value="144">Howford Primary School </option>
+
+<option value="145">Hyndland Primary School</option>
+
+<option value="146">Hyndland Secondary School</option>
+
+<option value="147">Ibrox Primary School and Nursery Class</option>
+
+<option value="148">Jimmy Dunnachie Family Learning Centre</option>
+
+<option value="149">John Paul Academy</option>
+
+<option value="150">John Paul II Primary</option>
+
+<option value="151">Kelbourne Park Primary School </option>
+
+<option value="152">Kelvin Park Early Years</option>
+
+<option value="153">Kelvindale Primary School</option>
+
+<option value="154">Keppoch Nursery </option>
+
+<option value="155">King&#39;s Park Primary School</option>
+
+<option value="156">King&#39;s Park Secondary School</option>
+
+<option value="157">Kirkriggs Primary School </option>
+
+<option value="158">Knightswood Early Years Centre</option>
+
+<option value="159">Knightswood Primary School</option>
+
+<option value="160">Knightswood Secondary School</option>
+
+<option value="161">Lamlash Nursery</option>
+
+<option value="162">Langa Street Nursery</option>
+
+<option value="163">Langfaulds Primary School</option>
+
+<option value="164">Langlands Primary School </option>
+
+<option value="165">Langside Primary School</option>
+
+<option value="166">Laurieston Day Nursery</option>
+
+<option value="167">Lime Tree Day Nursery</option>
+
+<option value="168">Linburn Academy</option>
+
+<option value="169">Linn Pre School Assessment and Development Centre</option>
+
+<option value="170">Linthaugh Nursery </option>
+
+<option value="171">Lochend Community High School</option>
+
+<option value="172">Lochview Nursery </option>
+
+<option value="173">Lorne Street Primary School</option>
+
+<option value="175">Lourdes Secondary School</option>
+
+<option value="176">Lyoncross Nursery </option>
+
+<option value="177">Machrie Nursery </option>
+
+<option value="178">Maryhill Park Nursery </option>
+
+<option value="179">Merrylee Primary School</option>
+
+<option value="180">Middlefield School</option>
+
+<option value="181">Miller Primary School</option>
+
+<option value="182">Milton Community Nursery</option>
+
+<option value="183">Miltonbank Primary School</option>
+
+<option value="184">Molendinar Family Learning Centre</option>
+
+<option value="185">Mosspark Primary School and Nursery Class</option>
+
+<option value="186">Mount Florida Primary School and Nursery Class</option>
+
+<option value="187">Mount Vernon Primary School</option>
+
+<option value="188">Newhills Secondary School</option>
+
+<option value="189">Nithsdale Road Nursery </option>
+
+<option value="190">Notre Dame High School</option>
+
+<option value="191">Notre Dame Primary School</option>
+
+<option value="192">Novar Nursery </option>
+
+<option value="193">Oakgrove Primary School</option>
+
+<option value="194">Oakwood Primary School</option>
+
+<option value="195">Onslow Drive Day Nursery</option>
+
+<option value="174">Our Lady of Lourdes Primary School and Nursery Class</option>
+
+<option value="196">Our Lady of Peace Primary School</option>
+
+<option value="197">Our Lady of the Annunciation Primary School</option>
+
+<option value="198">Our Lady of the Rosary Primary School and Nursery Class</option>
+
+<option value="199">Parkhead Community Nursery</option>
+
+<option value="200">Parkhill Secondary School</option>
+
+<option value="201">Parkview Primary School</option>
+
+<option value="202">Penilee Nursery </option>
+
+<option value="203">Pikeman Nursery &amp; Family Learning Centre</option>
+
+<option value="204">Pirie Park Primary</option>
+
+<option value="205">Pollok Children&#39;s Centre</option>
+
+<option value="206">Pollokshields Early Years Centre</option>
+
+<option value="207">Pollokshields Primary School</option>
+
+<option value="208">Quarry Brae Primary School </option>
+
+<option value="209">Renfrew Street Nursery</option>
+
+<option value="210">Riverbank Primary School</option>
+
+<option value="211">Riverside Primary</option>
+
+<option value="212">Rockfield Nursery </option>
+
+<option value="213">Rosshall Academy</option>
+
+<option value="214">Rosshall Nursery </option>
+
+<option value="215">Rosshall Visually Impaired Unit</option>
+
+<option value="216">Rowena Nursery</option>
+
+<option value="217">Royston Nursery </option>
+
+<option value="218">Royston Primary School</option>
+
+<option value="219">Ruchill Early Years Centre</option>
+
+<option value="220">Sacred Heart Primary School</option>
+
+<option value="221">Sandaig Nursery </option>
+
+<option value="222">Sandaig Primary School</option>
+
+<option value="223">Sandwood Language and Communication Resource</option>
+
+<option value="224">Sandwood Primary School</option>
+
+<option value="225">Sandy Road Day Nursery</option>
+
+<option value="226">Sandyford Day Nursery</option>
+
+<option value="227">Saracen Primary School</option>
+
+<option value="228">Scaraway Nursery </option>
+
+<option value="229">Scotstoun Primary School</option>
+
+<option value="230">Shaw Mhor Early Years Centre</option>
+
+<option value="231">Shawlands Academy</option>
+
+<option value="232">Shawlands Primary School</option>
+
+<option value="233">Sighthill Nursery </option>
+
+<option value="234">Silverdale Nursery </option>
+
+<option value="235">Smithycroft Secondary</option>
+
+<option value="236">Springburn Academy</option>
+
+<option value="237">St Albert&#39;s Primary School</option>
+
+<option value="238">St Andrew&#39;s Secondary</option>
+
+<option value="239">St Angela&#39;s Primary School and Nursery Class</option>
+
+<option value="240">St Anne&#39;s Primary School</option>
+
+<option value="241">St Bartholomew&#39;s Primary School</option>
+
+<option value="242">St Benedict&#39;s Primary School</option>
+
+<option value="243">St Bernard&#39;s Primary School</option>
+
+<option value="244">St Blane&#39;s Primary School</option>
+
+<option value="245">St Brendan&#39;s Primary School</option>
+
+<option value="246">St Bride&#39;s Primary School</option>
+
+<option value="247">St Bridget&#39;s Primary School and Nursery Class</option>
+
+<option value="248">St Brigid&#39;s Primary School</option>
+
+<option value="249">St Catherine&#39;s Primary School</option>
+
+<option value="250">St Charles&#39; Language and Communication Resource</option>
+
+<option value="251">St Charles&#39; Primary School</option>
+
+<option value="252">St Clare&#39;s Day Nursery</option>
+
+<option value="253">St Clare&#39;s Primary School</option>
+
+<option value="254">St Constantine&#39;s Primary School and Nursery Class</option>
+
+<option value="255">St Conval&#39;s Primary School</option>
+
+<option value="256">St Cuthbert&#39;s Primary School</option>
+
+<option value="257">St Denis&#39; Primary School</option>
+
+<option value="258">St Fillan&#39;s Primary School and Nursery Class</option>
+
+<option value="259">St Francis of Assisi Primary School</option>
+
+<option value="260">St Francis&#39; Primary School and Nursery Class</option>
+
+<option value="261">St George&#39;s Primary School</option>
+
+<option value="262">St Joachim&#39;s Primary School</option>
+
+<option value="263">St Joseph&#39;s Primary School</option>
+
+<option value="264">St Kevin&#39;s Primary School</option>
+
+<option value="265">St Margaret Mary&#39;s Secondary School</option>
+
+<option value="266">St Maria Goretti Primary School</option>
+
+<option value="267">St Marnock&#39;s Primary School</option>
+
+<option value="268">St Martha&#39;s Primary School</option>
+
+<option value="269">St Mary&#39;s Primary School</option>
+
+<option value="270">St Michael&#39;s Primary School</option>
+
+<option value="271">St Mirin&#39;s Primary School</option>
+
+<option value="272">St Monica&#39;s (Milton) Primary School</option>
+
+<option value="273">St Monica&#39;s (Pollok) Primary School</option>
+
+<option value="274">St Mungo&#39;s Academy</option>
+
+<option value="275">St Mungo&#39;s Primary School and Nursery Class</option>
+
+<option value="276">St Ninian&#39;s Primary School</option>
+
+<option value="277">St Oswald&#39;s Secondary School </option>
+
+<option value="278">St Patrick&#39;s Primary School</option>
+
+<option value="279">St Paul&#39;s (Shettleston) Primary School and Nursery Class</option>
+
+<option value="280">St Paul&#39;s (Whiteinch) Primary School</option>
+
+<option value="281">St Paul&#39;s High School</option>
+
+<option value="282">St Philomena&#39;s Primary School</option>
+
+<option value="283">St Roch&#39;s Hearing Impairment Unit (Secondary) </option>
+
+<option value="284">St Roch&#39;s Primary School and Hearing Impairment Unit</option>
+
+<option value="285">St Roch&#39;s Secondary School</option>
+
+<option value="286">St Rose of Lima Primary School</option>
+
+<option value="287">St Saviour&#39;s Primary School</option>
+
+<option value="288">St Stephen&#39;s Primary School</option>
+
+<option value="289">St Teresa&#39;s Primary School</option>
+
+<option value="290">St Thomas Aquinas Secondary School</option>
+
+<option value="291">St Thomas&#39; Primary School</option>
+
+<option value="292">St Timothy&#39;s Primary School and Nursery Class</option>
+
+<option value="293">St Vincent&#39;s Primary School</option>
+
+<option value="294">Sunnyside Language and Communication Resource</option>
+
+<option value="295">Sunnyside Primary School</option>
+
+<option value="296">Swinton Primary School</option>
+
+<option value="297">Thornlaw Nursery </option>
+
+<option value="298">Thorntree Primary School</option>
+
+<option value="299">Thornwood Primary School and Nursery Class</option>
+
+<option value="300">Tinto Primary School</option>
+
+<option value="301">Toryglen Language and Communication Resource</option>
+
+<option value="302">Toryglen Primary School</option>
+
+<option value="303">Tower View Nursery</option>
+
+<option value="304">Wallacewell Primary School</option>
+
+<option value="305">Wellshot Primary School</option>
+
+<option value="306">Westercraigs Nursery </option>
+
+<option value="307">Westerhouse Nursery &amp; Family Learning Centre</option>
+
+<option value="308">Westmuir High School</option>
+
+<option value="309">Whitehill Secondary</option>
+
+<option value="310">Whitehill Support Centre</option>
+
+<option value="311">Whiteinch Nursery </option>
+
+<option value="312">Whiteinch Primary School</option>
+
+<option value="313">Woodacre Nursery </option>
+
+<option value="314">Woodside Nursery </option>
+
+<option value="315">Wyndford Nursery </option>
+
+<option value="316">Yokerburn Nursery </option>
+
+</select>
+
+            </li>
+
+
+            <li class="clear"></li>
+			<hr>
+			
+			
+			
+			<h3>Your story</h3>
+
+            <li class="floatleft">
+
+                <label for="Title">Title<span class="field-validation-valid" data-valmsg-for="Title" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" maxlength="100" data-val-maxlength="Title too long" data-val-maxlength-max="100" data-val-required="Enter a Title" id="Title" name="Title" type="text" value="Test" />
+				<div data-tooltip="Try keep it short and snappy" data-tooltip-persistent>Try keep it short and snappy</div>
+
+                
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="TileSummary">Subheading<span class="field-validation-valid" data-valmsg-for="TileSummary" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" maxlength="250" data-val-maxlength="Tile Summary too long" data-val-maxlength-max="250" data-val-required="Enter a Tile Summary" id="TileSummary" name="TileSummary" type="text" value="sixteen" />
+				<div data-tooltip="Expand on your strapline here" data-tooltip-persistent>Extend on your strapline here</div>
+
+                
+
+            </li>
+
+            <li class="clear"></li>
+
+
+
+            <li class="floatleft">
+
+                <label for="Introduction">Introduction<span class="field-validation-valid" data-valmsg-for="Introduction" data-valmsg-replace="false">*</span> <!--(200 character limit)--></label><br />
+
+                <!--<textarea cols="20" maxlength="200" data-val="true" data-val-maxlength="Introduction too long" data-val-maxlength-max="200" data-val-required="Enter a Introduction" id="Introduction" name="Introduction" rows="2">
+
+				</textarea>-->
+				
+				<input data-val="true" maxlength="250" data-val-maxlength="Introduction too long" data-val-maxlength-max="250" data-val-required="Enter an introduction" id="Introduction" name="Introduction" type="text" value="Four" />
+
+            </li>
+
+
+
+            <li class="clear"></li>
+
+
+
+            <li>
+
+                <label for="Body">Body<span class="field-validation-valid" data-valmsg-for="Body" data-valmsg-replace="false">*</span></label><br />
+
+                <textarea class="ckeditor" cols="20" data-val="true" data-val-required="Enter a Body" id="Body" name="Body" rows="2">
+
+</textarea>
+
+                
+
+            </li>
+
+            <li class="clear"></li>
+
+
+
+            <li class="floatleft">
+
+                <label for="NewsThemeId">News Category</label><br />
+
+                <select data-val="true" data-val-number="The field NewsThemeId must be a number." id="NewsThemeId" name="NewsThemeId"><option value="">Select a category</option>
+
+<option value="24">Christmas</option>
+
+<option value="13">Climate Change</option>
+
+<option value="7">Competition</option>
+
+<option value="14">Competition win</option>
+
+<option value="21">COP26</option>
+
+<option value="27">End of term message</option>
+
+<option value="18">Funding Opportunities</option>
+
+<option value="16">Fundraiser - bake sale</option>
+
+<option value="17">Fundraising</option>
+
+<option value="1">Hate Crime Awareness Week</option>
+
+<option value="26">Job Opportunity</option>
+
+<option value="4">Learning for Sustainability</option>
+
+<option value="22">New Appointment</option>
+
+<option value="28">Period Dignity</option>
+
+<option value="5">Retirement News</option>
+
+<option value="19">School Visit Opportunities </option>
+
+<option value="12">Scotland&#39;s Census 2022</option>
+
+<option value="8">Scottish SPCA</option>
+
+<option value="25">St. Andrew&#39;s Day 2021</option>
+
+<option value="11">Staff Development</option>
+
+<option value="10">Survey</option>
+
+<option value="2">Theme 2 [edit]</option>
+
+<option value="23">Update</option>
+
+<option value="6">Updates</option>
+
+<option value="15">Working partnerships</option>
+
+<option value="20">Young Person&#39;s Guarantee</option>
+
+</select>
+				<div data-tooltip="What type of story is it?" data-tooltip-persistent>What type of story is it?</div>
+
+            </li>
+
+
+
+            <li class="floatright NewNewsThemeRow" style="display: none;">
+
+               
+
+                    <label for="NewNewsTheme">New News Category<span class="field-validation-valid" data-valmsg-for="NewNewsTheme" data-valmsg-replace="false">*</span></label><br />
+
+                    <input data-val="true" data-val-length="New NewsT heme is too long" data-val-length-max="50" data-val-requiredif="Please enter a New News Theme" data-val-requiredif-dependentproperty="NewsThemeId" data-val-requiredif-dependentvalue="0" data-val-requiredif-operator="EqualTo" id="NewNewsTheme" name="NewNewsTheme" type="text" value="" />
+
+                    
+
+                
+
+            </li>
+
+            <li class="clear"></li>
+
+
+
+            <li class="floatleft">
+
+
+
+                <label for="NewsImage">Upload Image (Recommended size 1600px x 900px)</label><br />
+
+                <input data-val="true" data-val-requiredif="Select a News Image" data-val-requiredif-dependentproperty="IsCreate" data-val-requiredif-dependentvalue="True" data-val-requiredif-operator="EqualTo" id="NewsImage" name="NewsImage" readonly="readonly" style="width: 314px;" type="text" value="" />
+
+
+
+                <button type="button" onclick="BrowseServer('NewsImage');"><span class="glyphicons glyphicons-picture" title="Select an Image"></span></button>
+				<div data-tooltip="The image should be landscape for best result" data-tooltip-persistent>The image should be landscape for best result</div><br />
+
+
+
+            </li>
+
+            <li class="clear"></li>
+
+
+
+            <li class="floatleft">
+
+                <label for="PublishDate">Publish Date<span class="field-validation-valid" data-valmsg-for="PublishDate" data-valmsg-replace="false">*</span></label><br />
+
+                <input class="PublishDate" data-val="true" data-val-date="The field PublishDate must be a date." data-val-required="Enter a Publish Date" id="PublishDate" name="PublishDate" type="text" value="" />
+
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="ExpiryDate">Expiry Date<span class="field-validation-valid" data-valmsg-for="PublishDate" data-valmsg-replace="false">*</span></label><br />
+
+                <input class="ExpiryDate" data-val="true" data-val-date="The field ExpiryDate must be a date." data-val-is="Expiry Date must be greater than or equal to the Publish Date" data-val-is-dependentproperty="PublishDate" data-val-is-operator="GreaterThanOrEqualTo" data-val-is-passonnull="False" data-val-required="Enter an Expiry Date" id="ExpiryDate" name="ExpiryDate" type="text" value="15/01/2022" />
+
+
+            </li>
+			
+			<li class="clear"></li>
+			
+			<hr>
+			
+			<h3>Insert quote (Optional)</h3>
+			<p>If your story includes a quote, fill in the details below.</p>
+
+            <li class="floatleft">
+
+                <label for="QuoteMessage">Quote Message<span class="field-validation-valid" data-valmsg-for="QuoteMessage" data-valmsg-replace="false">*</span></label><br />
+
+                <input id="QuoteMessage" name="QuoteMessage" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="QuoteAuthor">Quote Author<span class="field-validation-valid" data-valmsg-for="QuoteAuthor" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" data-val-maxlength="Quote Author too long" data-val-maxlength-max="100" id="QuoteAuthor" name="QuoteAuthor" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+
+
+            <li class="floatleft">
+
+                <label for="QuoteAuthorJobTitle">Quote Author's Job Title<span class="field-validation-valid" data-valmsg-for="QuoteAuthorJobTitle" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" data-val-maxlength="Quote Author Job Title too long" data-val-maxlength-max="100" id="QuoteAuthorJobTitle" name="QuoteAuthorJobTitle" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+            <li class="floatright">
+
+                <label for="QuoteAuthorLocation">Quote Author's Location<span class="field-validation-valid" data-valmsg-for="QuoteAuthorLocation" data-valmsg-replace="false">*</span></label><br />
+
+                <input data-val="true" data-val-maxlength="Quote Author Location too long" data-val-maxlength-max="100" id="QuoteAuthorLocation" name="QuoteAuthorLocation" type="text" value="" />
+
+                
+
+            </li>
+
+
+
+            <li class="clear"></li>
+			
+			
+			<hr>
+
+
+            <li>
+
+                <label for="Footer">Footer<span class="field-validation-valid" data-valmsg-for="Footer" data-valmsg-replace="false">*</span></label><br />
+
+                <textarea class="ckeditor" cols="20" id="Footer" name="Footer" rows="2">
+
+				</textarea>
+
+                
+
+            </li>
+
+
+
+            <li class="clear"></li>
+
+
+
+            <!--<li class="floatleft">
+
+                <label for="FeaturedStory">Featured Story</label><br />
+
+                <input data-val="true" data-val-required="The FeaturedStory field is required." id="FeaturedStory" name="FeaturedStory" type="checkbox" value="true" /><input name="FeaturedStory" type="hidden" value="false" />
+
+            </li>-->
+
+
+
+<input data-val="true" data-val-required="The Approved field is required." id="Approved" name="Approved" type="hidden" value="False" />            <li class="clear">
+				<p>Please review your story as you won't be able to edit it after submitting.</p>
+                <input type="submit" name="Submit" value="submit" class="submitbutton" />
+
+            </li>
+
+
+
+            <li class="clear"></li>
+
+        </ul>
+
+    </div>
+
+<input data-val="true" data-val-required="The IsCreate field is required." id="IsCreate" name="IsCreate" type="hidden" value="True" /><input data-val="true" data-val-required="The PublicForm field is required." id="PublicForm" name="PublicForm" type="hidden" value="False" /></form>
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $(".PublishDate").datepicker({
+
+            changeMonth: true,
+
+            changeYear: true,
+
+            dateFormat: 'dd/mm/yy',
+
+            yearRange: 'c:c+1',
+
+
+
+        });
+
+    });
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+
+    $(function () {
+
+        $(".ExpiryDate").datepicker({
+
+            changeMonth: true,
+
+            changeYear: true,
+
+            dateFormat: 'dd/mm/yy',
+
+            yearRange: 'c:c+1',
+
+
+
+        });
+
+    });
+
+
+
+</script>
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+    var Fileman2 = '/Content/Filemanager2/index.html';
+
+    CKEDITOR.replace('Body', {
+
+        customConfig: '/content/ckeditorConfig/configmvcfilemanager.js'
+
+   , filebrowserBrowseUrl: Fileman2
+
+    });
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+
+
+    var Fileman2 = '/Content/Filemanager2/index.html';
+
+    CKEDITOR.replace('Footer', {
+
+        customConfig: '/content/ckeditorConfig/configmvcfilemanager.js'
+
+   , filebrowserBrowseUrl: Fileman2
+
+    });
+
+</script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        jQuery.extend(jQuery.validator.methods, {
+
+            date: function (value, element) {
+
+                var d = new Date();
+
+                return this.optional(element) ||
+
+                    !/Invalid|NaN/.test(new Date(d.toLocaleDateString(value)));
+
+            }
+
+        });
+
+    });
+
+</script>
+
+<script type="text/javascript">
+
+    var urlobj;
+
+
+
+    function BrowseServer(obj) {
+
+        urlobj = obj;
+
+        OpenServerBrowser(
+
+            '/Content/Filemanager2/index.html?expandedFolder=News/',
+
+            screen.width * 0.7,
+
+            screen.height * 0.7);
+
+    }
+
+
+
+    function OpenServerBrowser(url, width, height) {
+
+        var iLeft = (screen.width - width) / 2;
+
+        var iTop = (screen.height - height) / 2;
+
+        var sOptions = "toolbar=no,status=no,resizable=yes,dependent=yes";
+
+        sOptions += ",width=" + width;
+
+        sOptions += ",height=" + height;
+
+        sOptions += ",left=" + iLeft;
+
+        sOptions += ",top=" + iTop;
+
+        var oWindow = window.open(url, "BrowseWindow", sOptions);
+
+    }
+
+
+
+    function SetUrl(url, width, height, alt) {
+
+        document.getElementById(urlobj).value = url;
+
+        oWindow = null;
+
+    }
+
+</script>
+
+
+
+
+
+
+
+<script>
+
+   /* $(document).ready(function () {
+
+        if ($("input[type='radio']").val() == "School") {
+
+            $(".schools").show();
+
+        } else {
+
+            $(".schools").hide();
+
+        }
+
+
+
+    });*/
+
+
+
+    $("input[type='radio']").change(function () {
+
+        if ($(this).val() == "School") {
+
+            $(".schools").show();
+
+        } else {
+
+            $(".schools").hide();
+
+        }
+
+    });
+
+</script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+
+
+        $('.js-example-basic-single').select2();
+
+    });
+
+</script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+
+        if ($('#NewsThemeId').val() == "")
+
+            $(".NewNewsThemeRow").hide()
+
+        else if ($('#NewsThemeId').val() == 0)
+
+            $(".NewNewsThemeRow").show()
+
+
+
+
+
+        $('#NewsThemeId').on('change', function () {
+
+
+
+            if (this.value == 0) {
+
+
+
+                $(".NewNewsThemeRow").show()
+
+
+
+            }
+
+            else {
+
+
+
+                $(".NewNewsThemeRow").hide()
+
+
+
+            }
+
+        });
+
+    });
+
+</script>
+
+        <br />
+
+    <br />
+
+        <br />
+
+    </div> <!-- End news left -->
+
+
+
+
+
+        </div> <!-- End news body -->
+
+
+
+    </div>
+
+
+
+<footer>
+
+
+
+    <div class="most-visited-pages">
+
+                <a class="most-visited-pages-btn" href="/Pages/View/18" title="Go to COVID-19 page" target="_self">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/9.svg" width="72.5" height="72.5" alt="COVID-19 icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>COVID-19</span></p>
+
+                    </div>
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/News/Index" title="Go to News page">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/11.svg" width="72.5" height="72.5" alt="News icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>News</span></p>
+
+                    </div>
+
+
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/Schools/Directory" title="Go to School Directory page">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/13.svg" width="72.5" height="72.5" alt="School Directory icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>School Directory</span></p>
+
+                    </div>
+
+
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/Pages/View/59" title="Go to Health &amp; Safety page" target="_self">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/15.svg" width="72.5" height="72.5" alt="Health &amp; Safety icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>Health &amp; Safety</span></p>
+
+                    </div>
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/Pages/View/68" title="Go to Management Circulars page" target="_self">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/16.svg" width="72.5" height="72.5" alt="Management Circulars icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>Management Circulars</span></p>
+
+                    </div>
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/Pages/View/26" title="Go to Staff Development page" target="_self">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/17.svg" width="72.5" height="72.5" alt="Staff Development icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>Staff Development</span></p>
+
+                    </div>
+
+                </a>
+
+                <a class="most-visited-pages-btn" href="/Pages/View/62" title="Go to Digital Learning page" target="_self">
+
+                    <div>
+
+                        <div>
+
+                            <img class="most-visited-pages-icon" src="/FrequentlyVisitedPageIcon/18.svg" width="72.5" height="72.5" alt="Digital Learning icon" />
+
+                        </div>
+
+                        <p class="most-visited-pages-title"><span>Digital Learning</span></p>
+
+                    </div>
+
+                </a>
+
+        
+
+    </div> <!-- End most frequest pages -->
+
+
+
+    <div id="footer-warapper" class="flex-row">
+
+
+
+        <div class="footer-column">
+
+
+
+            <div class="footer-column-header">GCC Network</div>
+
+
+
+            <ul class="footer-links">
+
+
+
+                    <li><a href="https://www.glasgow.gov.uk/" title="Go to the Glasgow City Council website" target="_blank"><span>Glasgow City Council</span></a></li>
+
+                    <li><a href="https://gcc.pecosipm.com/pm/register.asp" title="Go to the PECOS website" target="_blank"><span>PECOS</span></a></li>
+
+                    <li><a href="https://www.learntowork.net/glasgow/" title="Go to the Learn to Work website" target="_blank"><span>Learn to Work</span></a></li>
+
+                    <li><a href="https://sts.platform.rmunify.com/account/signin/glow" title="Go to the GLOW website" target="_blank"><span>GLOW</span></a></li>
+
+                    <li><a href="#" title="Go to the Glasgow Blogs website" target="_blank"><span>Glasgow Blogs</span></a></li>
+
+                    <li><a href="http://www.mlol.co.uk/" title="Go to the MLOL website" target="_blank"><span>MLOL</span></a></li>
+
+                    <li><a href="http://ice.medialab.nl/" title="Go to the ICE website" target="_blank"><span>ICE</span></a></li>
+
+                    <li><a href="http://www.sqa.org.uk/" title="Go to the SQA website" target="_blank"><span>SQA</span></a></li>
+
+                    <li><a href="https://glasgow.cpdservice.net/" title="Go to the CPD Manager website" target="_blank"><span>CPD Manager</span></a></li>
+
+                    <li><a href="https://education.gov.scot/" title="Go to the Education Scotland website" target="_blank"><span>Education Scotland</span></a></li>
+
+                    <li><a href="https://myjobscotland.gov.uk/councils/glasgow/jobs" title="Go to the My Job Scotland website" target="_blank"><span>My Job Scotland</span></a></li>
+
+                    <li><a href="http://connect.glasgow.gov.uk/" title="Go to the Connect website" target="_blank"><span>Connect</span></a></li>
+
+                    <li><a href="http://myconnections.glasgow.gov.uk/Portal.aspx" title="Go to the My Portal website" target="_blank"><span>My Portal</span></a></li>
+
+                    <li><a href="https://gcc.info-exchange.com/Schools" title="Go to the Incident Reporting website" target="_blank"><span>Incident Reporting</span></a></li>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+
+
+            <div class="footer-column-header">Services and Information</div>
+
+
+
+            <ul class="footer-links">
+
+
+
+                    <li><a href="/Pages/View/18" title="Go to COVID-19's main page" target="_self"><span>COVID-19</span></a></li>
+
+                    <li><a href="/Pages/View/123" title="Go to Child Protection and Safeguarding 's main page" target="_self"><span>Child Protection and Safeguarding </span></a></li>
+
+                    <li><a href="/Pages/View/15" title="Go to Curriculum's main page" target="_self"><span>Curriculum</span></a></li>
+
+                    <li><a href="/Pages/View/2" title="Go to Early Learning and Childcare's main page" target="_self"><span>Early Learning and Childcare</span></a></li>
+
+                    <li><a href="/Pages/View/70" title="Go to Equalities's main page" target="_self"><span>Equalities</span></a></li>
+
+                    <li><a href="/Pages/View/105" title="Go to Financial Management &amp; Compliance's main page" target="_self"><span>Financial Management &amp; Compliance</span></a></li>
+
+                    <li><a href="/Pages/View/59" title="Go to Health &amp; Safety's main page" target="_self"><span>Health &amp; Safety</span></a></li>
+
+                    <li><a href="/Pages/View/38" title="Go to Inclusion's main page" target="_self"><span>Inclusion</span></a></li>
+
+                    <li><a href="/Pages/View/63" title="Go to Learning for Sustainability's main page" target="_self"><span>Learning for Sustainability</span></a></li>
+
+                    <li><a href="/Pages/View/19" title="Go to Learning Teaching &amp; Assessment's main page" target="_self"><span>Learning Teaching &amp; Assessment</span></a></li>
+
+                    <li><a href="/Pages/View/116" title="Go to Quality Improvement &amp; Leadership's main page" target="_self"><span>Quality Improvement &amp; Leadership</span></a></li>
+
+                    <li><a href="/Pages/View/65" title="Go to School Administration Support's main page" target="_self"><span>School Administration Support</span></a></li>
+
+                    <li><a href="/Pages/View/26" title="Go to Staff Development's main page" target="_self"><span>Staff Development</span></a></li>
+
+                    <li><a href="/Pages/View/144" title="Go to Strategic Support Services's main page" target="_self"><span>Strategic Support Services</span></a></li>
+
+                    <li><a href="/Pages/View/119" title="Go to Support and Policies's main page" target="_self"><span>Support and Policies</span></a></li>
+
+
+
+            </ul>
+
+
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+
+
+            <div class="footer-column-header">Connect with GCC</div>
+
+
+
+            <ul class="footer-links" id="footer-social-links">
+
+
+
+                    <li>
+
+                        <div><img src="/content/images/TwitterIcon.svg" onerror="this.onerror=null; this.src='/content/images/TwitterIcon.png'" alt="Twitter icon" /></div>
+
+                        <a href="https://twitter.com/GlasgowCC" title="Follow @GlasgowCityCouncil on Twitter" target="_blank"><span>@GlasgowCityCouncil</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/FacebookIcon.svg" onerror="this.onerror=null; this.src='/content/images/FacebookIcon.png'" alt="Facebook icon" /></div>
+
+                        <a href="https://www.facebook.com/GlasgowCC/" title="Follow Glasgow City Council on Facebook" target="_blank"><span>Glasgow City Council</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/TwitterIcon.svg" onerror="this.onerror=null; this.src='/content/images/TwitterIcon.png'" alt="Twitter icon" /></div>
+
+                        <a href="https://twitter.com/maureen0207" title="Follow @MaureenMcKenna on Twitter" target="_blank"><span>@MaureenMcKenna</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/YoutubeIcon.svg" onerror="this.onerror=null; this.src='/content/images/YoutubeIcon.png'" alt="YouTube icon" /></div>
+
+                        <a href="https://www.youtube.com/channel/UCBQs02KNFbe6d12abloXWZQ/" title="Follow @STEMGlasgow on YouTube" target="_blank"><span>@STEMGlasgow</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/TwitterIcon.svg" onerror="this.onerror=null; this.src='/content/images/TwitterIcon.png'" alt="Twitter icon" /></div>
+
+                        <a href="https://twitter.com/GlasgowLOL" title="Follow @GlasgowLOL on Twitter" target="_blank"><span>@GlasgowLOL</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/InstagramIcon.svg" onerror="this.onerror=null; this.src='/content/images/InstagramIcon.png'" alt="Instagram icon" /></div>
+
+                        <a href="https://www.instagram.com/malawilol/" title="Follow @MalawiLOL on Instagram" target="_blank"><span>@MalawiLOL</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/TwitterIcon.svg" onerror="this.onerror=null; this.src='/content/images/TwitterIcon.png'" alt="Twitter icon" /></div>
+
+                        <a href="https://twitter.com/edisglasgow" title="Follow @EdISGlasgow on Twitter" target="_blank"><span>@EdISGlasgow</span></a>
+
+                    </li>
+
+                    <li>
+
+                        <div><img src="/content/images/TwitterIcon.svg" onerror="this.onerror=null; this.src='/content/images/TwitterIcon.png'" alt="Twitter icon" /></div>
+
+                        <a href="https://twitter.com/EqualitiesEdGCC" title="Follow @EqualitiesEdGCC on Twitter" target="_blank"><span>@EqualitiesEdGCC</span></a>
+
+                    </li>
+
+
+
+                <li>
+
+                    <div><img src="/content/images/SocialMediaIcon.svg" onerror="this.onerror=null; this.src='/content/images/SocialMediaIcon.png'" alt="Social media icon" /></div>
+
+                    <a href="/Home/GCCSocials" title="Go to Connect with GCC page" target="_self"><span>Follow more</span></a>
+
+                </li>
+
+            </ul>
+
+
+
+        </div>
+
+
+
+    </div> <!-- End footerwrapper -->
+
+
+
+    <div id="maintance-links" class="flex-row">
+
+        <div class="left">
+
+            <ul>
+
+                <li><a href="/Pages/View/21" title="Go to About page" target="_self">About</a></li>
+
+                <li><a href="/Pages/View/7" title="View Glasgow Online's Cookie Policy" target="_self"><span>Cookie Policy</span></a></li>
+
+                <li><a href="/Pages/View/8" title="View Glasgow Online's Privacy Policy" target="_self"><span>Privacy Policy</span></a></li>
+
+                <li><a href="https://www.glasgow.gov.uk/article/22569/Glasgow-City-Council-statement-on-GDPR-compliance" title="" target="_blank"><span>GCC GDPR Compliance</span></a></li>
+
+                <li><a href="/Home/MeetTheTeam" title="Go to GO Team page" target="_self"><span>Meet the GO Team</span></a></li>
+
+                <li><a href="mailto:GoGlasgow@glasgow.gov.uk" title="Email Glasgow Online" target="self"><span>Contact Administrator</span></a></li>
+
+            </ul>
+
+            <div id="footerLogo">
+
+                <img src="/content/images/Footer-GOLogo.svg" width="64" height="40" onerror="this.onerror=null; this.src='/content/images/Footer-GOLogo.png'" style="vertical-align: middle" alt="Glasgow Online Logo" />
+
+
+
+            </div>
+
+        </div><!--End left -->
+
+
+
+                    <div class="right">
+
+                        <div id="footer-logos">
+
+                            <div class="footer-logo">
+
+                                <a href="https://www.glasgow.gov.uk" title="Go to Glasgow City Council website" target="_blank">
+
+                                    <img src="/content/images/GCCLogo(Black).svg" width="59" height="100" onerror="this.onerror=null; this.src='/content/images/GCCLogoBlack.png'" style="vertical-align: middle" alt="Glasgow City Council logo" />
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div><!--End right -->
+
+                </div>
+
+
+
+    <div id="footer-end">
+
+        <p>© <span id="year"></span> Glasgow City Council</p>
+
+    </div>
+
+
+
+</footer> <!-- End footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!--<script>
+
+        $('.carousel').carousel('pause')
+
+    </script>-->
+
+    <script>
+
+        var d = new Date();
+
+        var n = d.getFullYear();
+
+        document.getElementById("year").innerHTML = n;
+
+    </script>
+
+	<script>
+	var supportOnInput = 'oninput' in document.createElement('input');
+
+		
+	$("input[maxlength]").each(function() {
+		var $this = $(this);
+		var thisParent = $this.parent();
+		var maxLength = parseInt($this.attr('maxlength'));
+		$this.attr('maxlength', null);
+
+		var el = $("<span class=\"character-count\">" + maxLength + "</span>");
+		//el.insertBefore($this);
+		el.insertAfter($(thisParent).children().eq(0));
+
+		$this.bind(supportOnInput ? 'input' : 'keyup', function() {
+			var cc = $this.val().length;
+
+			el.text( maxLength - cc);
+
+			if(maxLength < cc) {
+				el.css('color', 'red');
+			} else {
+				el.css('color', 'inherit');
+			}
+		});
+	});
+		
+	function init(){
+		var $titleCounter = $('#Title').prev().prev()
+		var $titleLength = $('#Title').val().length;
+		$titleCounter.text($titleCounter.text() - $titleLength);
+		
+		var $tileSummaryCounter = $('#TileSummary').prev().prev()
+		var $tileSummaryLength = $('#TileSummary').val().length;
+		$tileSummaryCounter.text($tileSummaryCounter.text() - $tileSummaryLength);
+		
+		var $introductionCounter = $('#Introduction').prev().prev()
+		var $introductionLength = $('#Introduction').val().length;
+		$introductionCounter.text($introductionCounter.text() - $introductionLength);
+		
+	}
+	init();
+		
+	/*var supportOnTextarea = 'oninput' in document.createElement('textarea');
+
+		
+	$("textarea[maxlength]").each(function() {
+		var $this = $(this);
+		var thisParent = $this.parent();
+		var maxLength = parseInt($this.attr('maxlength'));
+		$this.attr('maxlength', null);
+
+		var el = $("<span class=\"character-count\">" + maxLength + "</span>");
+		el.insertAfter($(thisParent).children().eq(0));
+
+		$this.bind(supportOnTextarea ? 'textarea' : 'keyup', function() {
+			var cc = $this.val().length;
+
+			el.text( maxLength - cc);
+
+			if(maxLength < cc) {
+				el.css('color', 'red');
+			} else {
+				el.css('color', 'inherit');
+			}
+		});
+	});*/
+	</script>
+
+
+
+</body>
+
+</html>
+
