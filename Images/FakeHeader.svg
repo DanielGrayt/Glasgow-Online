@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="369.95" height="47.857" viewBox="0 0 369.95 47.857">
+  <g id="Group_838" data-name="Group 838" transform="translate(-855.051 -39.259)">
+    <g id="Group_831" data-name="Group 831" transform="translate(31.051 1.116)">
+      <g id="Group_789" data-name="Group 789">
+        <rect id="Rectangle_256" data-name="Rectangle 256" width="309" height="23" transform="translate(824.216 63)" fill="#f9f8f8"/>
+        <g id="Group_788" data-name="Group 788">
+          <path id="Path_11" data-name="Path 11" d="M6864.151,3311.009l-2.176-2.178a3.849,3.849,0,0,0,.5-1.915,3.907,3.907,0,1,0-3.907,3.906,3.85,3.85,0,0,0,1.915-.5l2.177,2.178a.9.9,0,0,0,1.273.029l.029-.029.186-.186a.894.894,0,0,0,.041-1.264C6864.177,3311.034,6864.165,3311.021,6864.151,3311.009Zm-8.743-4.1a3.164,3.164,0,1,1,3.162,3.167h0A3.165,3.165,0,0,1,6855.408,3306.911Z" transform="translate(-6023.541 -3234.009)" fill="#011627"/>
+          <text id="Search..." transform="translate(847.285 78)" fill="#b9c2c8" font-size="10.665" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Search...</tspan></text>
+        </g>
+      </g>
+      <g id="Group_787" data-name="Group 787" transform="translate(0 -0.116)">
+        <text id="GCC_Website_" data-name="GCC Website " transform="translate(824 51.822)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">GCC Website </tspan></text>
+        <text id="Connect_" data-name="Connect " transform="translate(911 51.611)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Connect </tspan></text>
+        <text id="My_Portal" data-name="My Portal" transform="translate(972 51.259)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">My Portal</tspan></text>
+        <text id="Incident_Reporting" data-name="Incident Reporting" transform="translate(1034 50)" fill="#fff" font-size="12" font-family="ArialMT, Arial"><tspan x="0" y="0">Incident Reporting</tspan></text>
+        <line id="Line_152" data-name="Line 152" y2="12.302" transform="translate(905.5 41.383)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.325"/>
+        <line id="Line_153" data-name="Line 153" y2="12.302" transform="translate(966.5 41.383)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.325"/>
+        <line id="Line_154" data-name="Line 154" y2="12.302" transform="translate(1028.5 41.383)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.325"/>
+      </g>
+    </g>
+    <g id="Group_832" data-name="Group 832" transform="translate(-5969.994 -3243.71)">
+      <line id="Line_156" data-name="Line 156" x2="30.734" transform="translate(7164.261 3298.709)" fill="#394e5b" stroke="#fff" stroke-miterlimit="10" stroke-width="1.185"/>
+      <line id="Line_157" data-name="Line 157" x2="30.734" transform="translate(7164.261 3307.597)" fill="#394e5b" stroke="#fff" stroke-miterlimit="10" stroke-width="1.185"/>
+      <line id="Line_158" data-name="Line 158" x2="30.734" transform="translate(7164.261 3316.484)" fill="#394e5b" stroke="#fff" stroke-miterlimit="10" stroke-width="1.185"/>
+    </g>
+  </g>
+</svg>

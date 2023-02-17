@@ -1,0 +1,10 @@
+<svg id="CalendarIcon_Blue_" data-name="CalendarIcon(Blue)" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1434" data-name="Rectangle 1434" width="16" height="16" fill="#0064b0"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2477" data-name="Group 2477" clip-path="url(#clip-path)">
+    <path id="Path_2520" data-name="Path 2520" d="M2,14H14V5H2ZM13,2h2a.945.945,0,0,1,1,.886A.924.924,0,0,1,16,3V15a.945.945,0,0,1-.886,1A.975.975,0,0,1,15,16H1a.945.945,0,0,1-1-.886A.977.977,0,0,1,0,15V3A.945.945,0,0,1,.888,2,.925.925,0,0,1,1,2H3V1a.945.945,0,0,1,.886-1A.923.923,0,0,1,4,0,.945.945,0,0,1,5,.888.974.974,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z" transform="translate(0 0)" fill="#0064b0" fill-rule="evenodd"/>
+  </g>
+</svg>
