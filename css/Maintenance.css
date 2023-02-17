@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	background-color: #10824A;
+	background-image: url("http://www.homeresources.ea.glasgow.sch.uk/GCCGraphics/websites/GenGCCGraphics/UserFiles/file/apps/go/images/MaintenanceBG.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 100%;
+}
+
+body{
+	color: white;
+	margin: 0;
+}
+
+div.container{
+	max-width: 800px !important;
+	display: flex;
+	flex-direction: column;
+}
+
+div.main{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+div.main>p{
+	margin-top: 0;
+}
+
+div.main a{
+	color: white;
+	font-weight: 600;
+}
+
+.top-bar{
+	border: none !important;
+}
+
+div.main>.top-bar:first-child{
+	margin-top: 80px;
+}
+
+div.main>.top-bar:first-child>h3{
+	font-size: 33px;
+	text-align: left;
+}
+
+div.main>.top-bar:last-child{
+	margin-top: 60px;
+	font-size: 10pt;
+}
+
+.additionalText{
+	margin-top: 16px;
+	border-top: solid white 1px;
+	padding-top: 16px;
+	/*font-size: 14pt;*/
+}

@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	background-color: rgb(253, 253, 253); /* #f9f9f9 */
+}
+
+/* Header */
+.navbar{
+	padding: 0;
+	z-index: 1;
+}
+
+.navbar .container{
+	margin:0;
+	padding:0 30px;
+}
+
+#gccNavLink{
+	width:68px;
+	margin-right: 1.5rem;
+}
+
+#gccNavLink>img{
+	position: absolute;
+	height: 111px;
+	top:20px;
+}
+
+.navbar-brand{
+	padding: 0;
+	margin-right: 1.5rem;
+	padding-left: 1.5rem;
+	border-left:1px solid #707070;
+}
+
+.navbar-brand img{
+	height: 40px;
+}
+
+.navbar li{
+	padding:0;
+	text-transform: uppercase;
+}
+
+.navbar li a{
+	padding:0 12px;
+	margin:0 0.85em;
+	line-height: 78px;
+	letter-spacing: 0.1em;
+	border-bottom: 2px solid transparent;
+	font-size: 12px;
+	font-weight: 800;
+	color: #262626 !important;
+}
+
+.navbar li a:hover{
+	border-bottom: 2px solid #00A900;
+}
+/* End header */
+
+/* Patch Notes list */
+
+#mainImage{
+	height:400px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 18px;
+}
+
+#mainImage #pageTitle{
+	position: absolute;
+	width:100%;
+	padding:0 5%;
+	top:50%;
+	text-align: center;
+	color: white;
+	transform: translateY(-50%);
+}
+
+#mainImage #pageTitle h1{
+	font-size: 48pt;
+	text-shadow: 2px 2px rgba(0,0,0,.6);
+	text-transform: uppercase;
+	max-width: 840px;
+	margin: auto;
+}
+
+#mainImage img{
+	width: 100%; 
+	height: 100%; 
+	object-fit: cover;
+}
+
+#mainImage:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.list-unstyled{
+	max-width: 800px;
+	margin: auto;
+}
+
+.media{
+	padding:2rem 0;
+	color: #484a4d;
+	border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.media:last-child{
+	border-bottom: 1px solid transparent;
+}
+
+.media a{
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	width:100%;
+}
+
+.image-holder{
+	overflow: hidden;
+	padding:0;
+	margin-right: 15px;
+	flex-grow: 1;
+}
+
+.media img{
+	transition: transform .6s cubic-bezier(.215,.61,.355,1);
+}
+
+.media a:hover img{
+	transform: scale(1.05);
+}
+
+.media-body{
+	flex-grow:1;
+}
+
+.media .date{
+	font-size: 9pt;
+}
+
+.media h4{
+	margin:.2em 0 .4em;
+	color: #262626;
+	letter-spacing: .02em;
+}
+/* End patch notes list */
+
+/* Report a bug list */
+.page-container-title{
+	margin-top:32px;
+	margin-bottom: 20px;
+	padding-left: 1rem;
+}
+
+.known-issues-list{
+	list-style: none;
+	padding:1.2rem 1rem;
+	margin: 0;
+	border-top: 1px solid #d2d2d1;
+	border-bottom: 1px solid #d2d2d1;
+}
+
+.known-issues-list li{
+	margin-top: 10px;
+}
+
+.known-issues-list li:first-child{
+	margin-top: 0;
+}
+
+.known-issues-list li a{
+	color: #1a1d21;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.known-issues-list li a:hover{
+	color: rgba(0,0,0,0.5);
+}
+
+form{
+	background-color: #fafafa;
+	padding:1.2rem 1rem;
+}
+/* End Report a bug list */
+
+/* Patch Notes article */
+#patch-article{
+	position: relative;
+	margin: 2.4rem auto;
+	padding: 1.2rem 5%;
+}
+@media (min-width: 1024px){
+	#patch-article{
+		max-width: 840px;
+		padding: 2.4rem 0;
+	}
+}
+@media (min-width: 1280px) {
+	#patch-article{
+		max-width: 1024px;
+		padding:0;
+	}
+}
+@media (min-width: 1440px) {
+	#patch-article{
+		max-width: 1280px;
+		padding:0;
+	}
+}
+
+@media (min-width: 768px){
+	#article-block{
+		padding: 0 15%;
+	}
+}
+@media (min-width: 1024px){
+	#article-block{
+		display: flex;
+		padding: 0;
+	}
+}
+
+@media (min-width: 1280px) {
+	#article-block{
+		padding: 0 0 0 7.5%;
+	}
+}
+
+#article-body{
+	font-weight: 400;
+}
+
+@media (min-width: 1024px){
+	#article-body{
+		width: 80%;
+		padding-right: 1.2rem;
+	}
+}
+@media (min-width: 1280px) {
+	#article-body{
+		width: 76%;
+		padding-right: 2.4rem;
+	}
+}
+
+#article-date{
+	font-size: 9pt;
+	margin:1.2rem 0;
+}
+
+#article-body h2, #article-body h4{
+	margin: 2.25rem 0 1rem 0;
+	padding-top:2.25rem;
+	border-top: 1px solid #d2d2d1;
+	font-weight: 600;
+}
+
+/*#article-body h2{
+	margin: 2.25rem 0;
+	padding-top:2.25rem;
+}
+
+#article-body h4{
+	margin: 1rem 0;
+	padding-top:1rem;
+}*/
+.anchor-link{
+	display: block;
+	position: relative;
+	top: -12rem;
+	visibility: hidden;
+}
+
+#article-body a{
+	color: #00A900;
+	text-decoration: underline;
+}
+
+#article-body ul, #article-body  ol{
+	padding-left: 3.6rem;
+}
+
+#article-body ul li, #article-body ol li{
+	margin:0.6rem 0;
+}
+
+#article-body ul li ul{
+	margin-left: .6rem;
+	padding-left: 1.2rem;
+}
+
+
+#chapter-nav{
+	display: none;
+	padding-left: 3.6rem;
+}
+
+@media (min-width: 1024px){
+	#chapter-nav{
+		position: sticky;
+		display: block;
+		width: 20%;
+		top: 7.5rem;
+		align-self: flex-start;
+		line-height: 1;
+		font-size: 10pt;
+		font-weight: 700;
+	}
+	
+	#chapter-nav li{
+		margin:.75rem 0;
+		min-width: 10.8rem;
+		line-height: 1.3;
+	}
+	
+	#chapter-nav>li:first-child{
+		padding-top:1.25rem;
+	}
+	
+	#chapter-nav li ul{
+		margin-left: 0;
+		padding-left: 1.25rem;
+	}
+}
+
+#chapter-nav a{
+	color: inherit;
+	text-decoration: underline;
+	display: block;
+}
+
+#userPermissionTable{
+	text-align: center;
+}
+
+#userPermissionTable tr>*:first-child{
+	text-align: left;
+}
+
+#userPermissionTable tr>th:first-child{
+	padding: 5px;
+}
+/* End Patch Notes article */
+
+/* Known Issues */
+.page-nav {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 50px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.breadcrumbs {
+	display: block;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background-color: transparent;
+}
+
+.breadcrumbs > li {
+	display: block;
+	float: left;
+	margin: 0;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: 1.2px;
+	color: #8b9199;
+}
+
+.breadcrumbs > li + li:before {
+	padding: 0 5px;
+	font-size: 14px;
+	color: #8b9199;
+	content: "›";
+}
+
+.breadcrumbs > li a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+#log{
+	padding: 0px 20px;
+	/*border-bottom: 1px solid #d2d2d1;*/
+	margin-bottom: 60px;
+	font-size: 1.125em;
+}
+
+#log h4{
+	padding: 20px 0px;
+	border-top: 1px solid #d2d2d1;
+	/*border-bottom: 1px solid #d2d2d1;*/
+	margin-top:20px;
+}
+/* End Known Issues */
+
+
+footer{
+	background-color: #f9f9f9;
+	padding:30px 0;
+	margin-top: 30px;
+}
+
+footer .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 1024px;
+	padding:0;
+}
+
+footer .container img{
+	margin:0 30px;
+}
+
+/* Footer nav */
+#footer-nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	margin-left: -5%;
+	padding: 2rem 5%;
+	border-top:1px solid #d2d2d1;
+}
+@media (min-width: 768px){
+	#footer-nav {
+		padding: 3rem 10%;
+		justify-content: center;
+	}
+}
+@media (min-width: 1024px){
+	#footer-nav {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+#footer-nav a{
+	font-weight: 700;
+}
+
+#footer-nav a {
+	text-transform: uppercase;
+	color: #262626;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 0.8em;
+}
+
+@media (min-width: 768px){
+	#footer-nav a {
+		font-size: 0.9em;
+		margin: 0 8em;
+	}
+}
+
+#footer-nav a span {
+	display: inline-block;
+}
+/*End footer nav */

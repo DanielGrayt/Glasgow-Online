@@ -1,0 +1,211 @@
+/* Carousel POSITION LEFT (4 GRADIENT COLOURS)
+*/
+
+/* GRADIENT */
+/* Position: left; Colour: white; */
+.carousel-item.light.left>.carousel-gradient{
+	background-image: linear-gradient(
+		to right, 
+		rgba(255, 255, 255, 0.8) 0px, 
+		/*rgba(255, 255, 255, 0.75) 12%, */
+		rgba(255, 255, 255, 0.8) 66%, 
+		rgba(255, 255, 255, 0.01) 100%
+	);
+	left: 0;
+}
+
+/* GRADIENT */
+/* Position: left; Colour: black; */
+.carousel-item.dark.left>.carousel-gradient{
+	background-image: linear-gradient(
+		to right, 
+		rgba(0, 0, 0, 0.8) 0px, 
+		rgba(0, 0, 0, 0.8) 66%, 
+		rgba(0, 0, 0, 0.0) 100%
+	);
+	left: 0;
+}
+
+/* GRADIENT */
+/* Position: left; Colour: blue; */
+.carousel-item.blue.left>.carousel-gradient{
+	background-image: linear-gradient(
+		to right, 
+		rgba(35, 118, 188, 0.8) 0px, 
+		rgba(35, 118, 188, 0.8) 66%, 
+		rgba(35, 118, 188, 0.0) 100%
+	);
+	left: 0;
+}
+
+/* GRADIENT */
+/* Position: left; Colour: GO green; */
+.carousel-item.green.left>.carousel-gradient{
+	background-image: linear-gradient(
+		to right, 
+		rgba(0, 132, 75, 0.8) 0px, 
+		rgba(0, 132, 75, 0.8) 66%, 
+		rgba(0, 132, 75, 0.01) 100%
+	);
+	left: 0;
+}
+
+/* GRADIENT */
+/* Position: left; Colour: transparent; */
+.carousel-item.no-gradient.left>.carousel-gradient{
+	background-image: none;
+	left: 0;
+}
+
+/* Carousel POSITION LEFT end
+*/
+
+/* Carousel POSITION RIGHT (4 GRADIENT COLOURS)
+*/
+
+/* Position: right; Colour: white; */
+.carousel-item.light.right>.carousel-gradient{
+	background-image: linear-gradient(
+		to left, 
+		rgba(255, 255, 255, 0.8) 0px, 
+		rgba(255, 255, 255, 0.8) 66%, 
+		rgba(255, 255, 255, 0.01) 100%
+	);
+	right: 0;
+}
+
+/* Position: right; Colour: black; */
+.carousel-item.dark.right>.carousel-gradient{
+	background-image: linear-gradient(
+		to left, 
+		rgba(0, 0, 0, 0.8) 0px, 
+		rgba(0, 0, 0, 0.85) 66%, 
+		rgba(0, 0, 0, 0.01) 100%
+	);
+	right: 0;
+}
+
+/* Position: right; Colour: blue; */
+.carousel-item.blue.right>.carousel-gradient{
+	background-image: linear-gradient(
+		to left, 
+		rgba(35, 118, 188, 0.8) 0px, 
+		rgba(35, 118, 188, 0.8) 66%, 
+		rgba(35, 118, 188, 0.0) 100%
+	);
+	right: 0;
+}
+
+/* Position: right; Colour: GO green; */
+.carousel-item.green.right>.carousel-gradient{
+	background-image: linear-gradient(
+		to left, 
+		rgba(0, 132, 75, 0.8) 0px, 
+		rgba(0, 132, 75, 0.8) 66%, 
+		rgba(0, 132, 75, 0.0) 100%
+	);
+	right: 0;
+}
+
+/* Position: right; Colour: transparent; */
+.carousel-item.no-gradient.right>.carousel-gradient{
+	background-image: none;
+	right: 0;
+}
+
+/* Carousel POSITION RIGHT end 
+*/
+
+
+
+/* Carousel TEXT POISITION (2)
+*/
+.carousel-item.left .carousel-caption-wrapper{
+	left: 0;
+	right: auto;
+}
+.carousel-item.right .carousel-caption-wrapper{
+	left: auto;
+	right: 0;
+}
+
+/* Carousel TEXT POSITION end 
+*/
+
+
+
+/* Carousel TEXT COLOURS (2)
+*/
+
+.carousel-item.light .carousel-caption,
+.carousel-item.light .carousel-caption{
+	color: black;
+}
+
+.carousel-item.dark .carousel-heading, 
+.carousel-item.blue .carousel-heading,
+.carousel-item.green .carousel-heading,
+.carousel-item.dark .carousel-subheading, 
+.carousel-item.blue .carousel-subheading,
+.carousel-item.green .carousel-subheading, 
+.carousel-item.no-gradient .carousel-heading,
+.carousel-item.no-gradient .carousel-subheading{
+	color: white !important;
+}
+
+/* Carousel TEXT COLOURS end
+*/
+
+/* MOBILE STYLES
+*/
+
+@media (max-width: 1084px) {
+	/* Position: bottom; Colour: white; */
+	.carousel-item.light>.carousel-gradient{
+		background-image: linear-gradient(
+			to top, 
+			rgba(255,255,255,0.95) 0px, 
+			rgba(255,255,255,0.95) 25%, 
+			rgba(255,255,255,0.0) 100%
+		) !important;
+	}
+
+	/* GRADIENT */
+	/* Position:  bottom; Colour: black; */
+	.carousel-item.dark>.carousel-gradient{
+		background-image: linear-gradient(
+			to top, 
+			rgba(0, 0, 0, 0.9) 0px, 
+			rgba(0, 0, 0, 0.8) 25%, 
+			rgba(0, 0, 0, 0.0) 100%
+		)!important;
+	}
+
+	/* GRADIENT */
+	/* Position:  bottom; Colour: blue; */
+	.carousel-item.blue>.carousel-gradient{
+		background-image: linear-gradient(
+			to top, 
+			rgba(35, 118, 188, 0.9) 0px, 
+			rgba(35, 118, 188, 0.8) 25%, 
+			rgba(35, 118, 188, 0.0) 100%
+		)!important;
+	}
+
+	/* GRADIENT */
+	/* Position:  bottom; Colour: GO green; */
+	.carousel-item.green>.carousel-gradient{
+		background-image: linear-gradient(
+			to top, 
+			rgba(0, 132, 75, 0.9) 0px, 
+			rgba(0, 132, 75, 0.8) 25%, 
+			rgba(0, 132, 75, 0.0) 100%
+		)!important;
+	}
+
+	/* GRADIENT */
+	/* Position:  bottom; Colour: transparent; */
+	.carousel-item.no-gradient>.carousel-gradient{
+		background-image: none!important;
+	}
+}
