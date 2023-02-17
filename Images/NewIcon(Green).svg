@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.091" height="44.091" viewBox="0 0 44.091 44.091">
+  <g id="NewIcon_Green_" data-name="NewIcon(Green)" transform="translate(-532.523 -1295.955)">
+    <text id="NEW" transform="matrix(0.966, -0.259, 0.259, 0.966, 555.603, 1321.863)" fill="#00854b" font-size="12" font-family="ArialMT, Arial"><tspan x="-13.998" y="0">NEW</tspan></text>
+    <g id="Ellipse_135" data-name="Ellipse 135" transform="matrix(0.966, -0.259, 0.259, 0.966, 532.523, 1305.272)" fill="none" stroke="#00854b" stroke-width="2">
+      <circle cx="18" cy="18" r="18" stroke="none"/>
+      <circle cx="18" cy="18" r="17" fill="none"/>
+    </g>
+  </g>
+</svg>
