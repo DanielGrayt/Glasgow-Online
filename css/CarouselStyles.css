@@ -164,8 +164,8 @@
 	.carousel-item.light>.carousel-gradient{
 		background-image: linear-gradient(
 			to top, 
-			rgba(255,255,255,0.95) 0px, 
-			rgba(255,255,255,0.95) 25%, 
+			rgba(255,255,255,1) 0px, 
+			rgba(255,255,255,0.85) 60%, 
 			rgba(255,255,255,0.0) 100%
 		) !important;
 	}
@@ -175,8 +175,8 @@
 	.carousel-item.dark>.carousel-gradient{
 		background-image: linear-gradient(
 			to top, 
-			rgba(0, 0, 0, 0.9) 0px, 
-			rgba(0, 0, 0, 0.8) 25%, 
+			rgba(0, 0, 0, 1) 0px, 
+			rgba(0, 0, 0, 0.85) 60%, 
 			rgba(0, 0, 0, 0.0) 100%
 		)!important;
 	}
@@ -186,8 +186,8 @@
 	.carousel-item.blue>.carousel-gradient{
 		background-image: linear-gradient(
 			to top, 
-			rgba(35, 118, 188, 0.9) 0px, 
-			rgba(35, 118, 188, 0.8) 25%, 
+			rgba(35, 118, 188, 1) 0px, 
+			rgba(35, 118, 188, 0.85) 60%, 
 			rgba(35, 118, 188, 0.0) 100%
 		)!important;
 	}
@@ -197,8 +197,8 @@
 	.carousel-item.green>.carousel-gradient{
 		background-image: linear-gradient(
 			to top, 
-			rgba(0, 132, 75, 0.9) 0px, 
-			rgba(0, 132, 75, 0.8) 25%, 
+			rgba(0, 132, 75, 1) 0px, 
+			rgba(0, 132, 75, 0.85) 60%, 
 			rgba(0, 132, 75, 0.0) 100%
 		)!important;
 	}
