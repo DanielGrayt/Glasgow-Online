@@ -6709,6 +6709,7 @@ div.panel.show div.panel.show{
 
 .modal-backdrop.show{
 	opacity: .95;
+	z-index: 10;
 }
 
 .modal-dialog{
