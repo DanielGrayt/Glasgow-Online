@@ -2529,6 +2529,7 @@ a.most-visited-pages-btn:hover p>span{
 	line-height: 1;
 	font-family: 'Helvetica Neue Light', Arial, "sans-serif";
 	margin-bottom: 15px;
+	display: none;
 }
 
 #homepage-tiles .tile-title{
