@@ -4268,6 +4268,7 @@ youtube>iframe{
 #GCCSocials #section-template .left{
 	background-color: white;
 	padding:36px 24px 40px;
+	color: #242424;
 }
 
 #page #section-template .right{
@@ -7641,6 +7642,97 @@ footer{
 
 .download-link-item a{
 	color: #394E5B;
+}
+
+/* Page Resources styles
+// List of accoridion tables used on GO to be re-styled 
+// + Page Resources
+// + Contact Details and Team Structure
+// + Privacy/Cookie policy
+// + School Directory
+*/
+
+
+
+#pageResources .accordion-table-description{
+	margin-bottom: 0;
+}
+
+#pageResources .accordion-table{
+	margin-top: 0;
+}
+
+#pageResources .accordion-table-header{
+	display: none;
+}
+
+.resource-item{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 15px 10px;
+}
+
+.resource-item:nth-child(2n+1){
+	background-color: #F7F9FA;
+}
+
+.resource-item:nth-child(2n){
+	background-color: #FFF;
+}
+
+.resource-item-title{
+	font-weight: bold;
+	font-family: "Helvetica Neue Bold", "Arial", "sans-serif";
+}
+
+.resource-item-description{
+	font-weight: 500;
+	font-family: "Helvetica Neue Regular", "Arial", "sans-serif";
+	margin-bottom: 8px;
+}
+
+.resource-item-stats{
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.resource-item-action{
+	min-width:145px;
+}
+
+.resource-item-action a{
+	padding-left: 24px;	
+	background-size: 17px 17px;
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+
+.resource-item.resource-type-download .resource-item-action a{
+	background-image: url('../Images/DownloadLinkIcon\(Blue\).svg');
+}
+
+.resource-item.resource-type-visit .resource-item-action a{
+	background-image: url('../Images/ExternalLinkIcon\(Blue\).svg');
+}
+
+.resource-item.resource-type-watch .resource-item-action a{
+	background-image: url('../Images/YoutubeIcon\(blue\).svg');
+}
+
+.resource-item-usage{
+	min-width: 178px;
+	
+}
+
+.resource-item-updated{
+	
+}
+
+.resource-item-usage,
+.resource-item-updated{
+	font-size: 0.8125em;
 }
 
 /* Gateway styles */
