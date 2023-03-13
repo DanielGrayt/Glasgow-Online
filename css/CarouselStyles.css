@@ -209,3 +209,46 @@
 		background-image: none!important;
 	}
 }
+
+/* HOMEPAGE TILE GRADIENTS
+*/
+
+#homepage-tiles > li:nth-child(10n+2).dark .tile-container, 
+#homepage-tiles > li:nth-child(10n+4).dark .tile-container, 
+#homepage-tiles > li:nth-child(10n+7).dark .tile-container, 
+#homepage-tiles > li:nth-child(10n+9).dark .tile-container
+{
+	background-color:##000 !important;
+}
+
+#homepage-tiles > li.light .tile-button,
+#homepage-tiles > li.light .tile-button:hover{
+	color: #000 !important;
+}
+
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span{
+	box-shadow: 0 2px #000 !important;
+}
+
+#homepage-tiles > li:nth-child(10n+2).light .tile-container, 
+#homepage-tiles > li:nth-child(10n+4).light .tile-container, 
+#homepage-tiles > li:nth-child(10n+7).light .tile-container, 
+#homepage-tiles > li:nth-child(10n+9).light .tile-container
+{
+	background-color:#fff !important;
+}
+
+#homepage-tiles > li.light .tile-button,
+#homepage-tiles > li.light .tile-button:hover{
+	color: #000 !important;
+}
+
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span,
+#homepage-tiles > li.light .tile-button:hover span{
+	box-shadow: 0 2px #000 !important;
+}
