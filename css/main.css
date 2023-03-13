@@ -5314,6 +5314,7 @@ section.accordion-table .accordion-table-description:nth-child(2){
 
 .accordion-table-content {
 	overflow: hidden;
+	padding: .625rem 0;
 	margin: .625rem 0;
 }
 
@@ -7665,6 +7666,27 @@ footer{
 
 #pageResources .accordion-table-header{
 	display: none;
+}
+
+#pageResources .accordion-table-content{
+	display: flex;
+	flex-direction: column;
+}
+
+a.resource-download-zip{
+	/* color: white; */
+	font-weight: 500;
+	font-family: "Helvetica Neue Regular", "Arial", "sans-serif";
+	background-color: transparent;
+	border: 1px solid #2376BC;
+	padding: 8px 10px;
+	margin-top: 16px;
+	text-align: center;
+}
+
+a.resource-download-zip>img{
+	max-height: 100%;
+	margin-right: 2px;
 }
 
 .resource-item{
