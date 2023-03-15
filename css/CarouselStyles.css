@@ -213,24 +213,22 @@
 /* HOMEPAGE TILE GRADIENTS
 */
 
-#homepage-tiles > li:nth-child(10n+2).dark .tile-container, 
-#homepage-tiles > li:nth-child(10n+4).dark .tile-container, 
-#homepage-tiles > li:nth-child(10n+7).dark .tile-container, 
-#homepage-tiles > li:nth-child(10n+9).dark .tile-container
-{
-	background-color:##000 !important;
+#homepage-tiles .tile .tile-gradiant{
+	background: linear-gradient(
+		0deg, rgba(0,0,0,100) 40%,
+        rgba(0,0,0,0) 100%
+    );
 }
 
-#homepage-tiles > li.light .tile-button,
-#homepage-tiles > li.light .tile-button:hover{
-	color: #000 !important;
+#homepage-tiles .tile.light .tile-gradiant{
+	background: linear-gradient(
+		0deg, rgba(255,255,255,100) 40%,
+        rgba(255,255,255,0) 100%
+    );
 }
 
-#homepage-tiles > li.light .tile-button:hover span,
-#homepage-tiles > li.light .tile-button:hover span,
-#homepage-tiles > li.light .tile-button:hover span,
-#homepage-tiles > li.light .tile-button:hover span{
-	box-shadow: 0 2px #000 !important;
+#homepage-tiles .tile.light .tile-wrapper{
+	color: black;
 }
 
 #homepage-tiles > li:nth-child(10n+2).light .tile-container, 

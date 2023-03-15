@@ -668,7 +668,7 @@
 
 
 			<!-- Square tile -->
-			<li class="fade-in-element tile black">
+			<li class="fade-in-element tile green">
 				<!-- <div class="tile black"> -->
 					<a href="#">
 						<div class="tile-gradiant"></div>
@@ -691,7 +691,7 @@
 				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Rectangle tile -->
-			<li class="fade-in-element tile black">
+			<li class="fade-in-element tile dark">
 				<!-- <div class="tile black"> -->
 					<a href="#">
 						<div class="tile-gradiant"></div>
@@ -760,12 +760,16 @@
 				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Full size tile -->
-			<li class="slide" id="schoolSearchTile">
-				<div class="tile white">
-					<div class="tile-image" style="background-image: url('images/SchoolSearch1.png');"></div>
-					<div class="tile-gradiant"></div>
-					<div class="tile-container">
-						<div class="tile-wrapper">
+			<li class="slide tile fullTile" id="schoolSearchTile">
+				<div class="tile-container heroItem f-x-left f-y-center">
+					<picture alt="School Search" class="tile-image">
+						<source media="(min-width: 1083px)" srcset="images/SchoolDirectoryTile(Desktop).png">
+						<source media="(min-width: 575px)" srcset="images/SchoolDirectoryTile(Tablet).png">
+						<img src="images/SchoolDirectory(Desktop).png"  alt="School Search">
+					</picture>
+					<div>
+						<div class="tile-wrapper copy">
+							<div id="tile-thumb"><img src="images/SchoolSearchIcon(white).svg" alt="School Directory icon" /></div>
 							<div class="tile-title">
 								<h1>School Search</h1>
 							</div>
@@ -835,7 +839,7 @@
 									</div>
 								</div>
 
-								<button type="submit" class="tile-button"><span><a href="SchoolDirectory.html" style="color:black;">Search</a></span></button>
+								<button type="submit" class="tile-button"><span>Search</span></button>
 							</form>
 						</div>
 					</div>
@@ -929,7 +933,7 @@
 			</li> <!-- End tile -->
 
 			<!-- Full size tile -->
-			<li class="slide" id="social-tile">
+			<!-- <li class="slide" id="social-tile">
 				<div class="tile black">
 					<div class="tile-image" style="background-image: url('images/ConnectWithGCCTile.png');"></div>
 					<div class="tile-container">
@@ -947,7 +951,33 @@
 						</div>
 					</div>
 				</div>
-			</li>
+			</li> -->
+			<li class="slide tile fullTile" id="newsTile">
+				<!-- <a href="#">
+					<div class="tile-gradiant"></div>
+					<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
+				</a> -->
+				<div class="tile-container heroItem f-x-right f-y-center">
+					<picture alt="Latest on GO" class="tile-image">
+						<source media="(min-width: 1083px)" srcset="images/NewsTile(Desktop).png">
+						<source media="(min-width: 575px)" srcset="images/NewsTile(Tablet).png">
+						<img src="images/NewsTile(Desktop).png"  alt="Latest on GO">
+					</picture>
+					<div>
+						<div class="tile-wrapper copy">
+							<div class="tile-title">
+								<h1>Latest on GO</h1>
+							</div>
+							<div class="tile-summary">
+								<p>Keep up to date with news from our schools, corporate announcements and internal vacancies</p>
+							</div>
+							<a href="#" class="tile-button">
+								<span>Browse now</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li> 
 
 
 		</ul><!-- End homepage tiles -->
