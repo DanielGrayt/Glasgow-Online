@@ -2235,9 +2235,18 @@ a.most-visited-pages-btn:hover{
 a.most-visited-pages-btn:hover p>span{
 	border-color: #00854B;
 }
-
-
 /* End most frequent pages */
+
+/* Weather Wdiget styles */
+.weatherwidget-io{
+	
+}
+
+.weatherInfo{
+	padding: 0.4em 0em !important;
+	max-width: 1280px !important;
+	margin: auto !important;
+}
 
 /* Homepage tiles */
 #homepage-tiles{
