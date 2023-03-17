@@ -2238,13 +2238,13 @@ a.most-visited-pages-btn:hover p>span{
 /* End most frequent pages */
 
 /* Weather Wdiget styles */
-.weatherwidget-io{
-	
+#ww_3d984d779bc4b{
+	background-color: #fff !important;
 }
 
-.weatherInfo{
-	padding: 0.4em 0em !important;
-	max-width: 1280px !important;
+.ww-box{
+	max-width: 960px;
+	padding: 1em 0 !important;
 	margin: auto !important;
 }
 
