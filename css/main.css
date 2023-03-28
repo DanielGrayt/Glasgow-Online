@@ -4722,6 +4722,7 @@ youtube>iframe{
 	font-style: italic;
 	font-family: 'Helvetica Neue Regular';
 	font-size: 0.875rem;
+	color: #00854B;
 }
 
 [data-tooltip]:before {
