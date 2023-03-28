@@ -668,7 +668,7 @@
 
 
 			<!-- Square tile -->
-			<li class="fade-in-element tile green">
+			<li class="fade-in-element tile">
 				<!-- <div class="tile black"> -->
 					<a href="#">
 						<div class="tile-gradiant"></div>
@@ -774,51 +774,10 @@
 								<h1>School Search</h1>
 							</div>
 							<form action="post" id="schoolSearchForm">
-								<div class="p-1">
-									<label class="form-title">
-										By school area
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school areas" id="selectSchoolArea" name="selectSchoolArea" required="" style="width: 50%;" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolArea">
-											<option value="" data-select2-id="select2-data-13-d990">All areas</option>
-											<option value="ce">North West</option>
-											<option value="drs">North East</option>
-											<option value="edu">South</option>
-										</select>
-									</div>
-								</div>
-								<div class="p-1">
-									<label class="form-title">
-										By school sector
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school sectors" id="selectSchoolSector" name="selectSchoolSector" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolSector">
-											<option value="" data-select2-id="select2-data-17-m2rn">All sectors</option>
-											<option value="Primary">All Primary Schools</option>
-											<option value="Secondary">All Secondary Schools</option>
-										</select>
-									</div>
-								</div>
-								<div class="p-1">
-									<label class="form-title">
-										By learning community
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of learning communities" id="selectSchoolLearningCommunities" name="selectSchoolLearningCommunities" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolLearningCommunities">
-											<option value="" data-select2-id="select2-data-25-j7rb">All learning communites</option>
-											<option value="ce">Chief Executives</option>
-											<option value="drs">Development Regeneration Services</option>
-											<option value="edu">Education Services</option>
-											<option value="fin">Finance</option>
-											<option value="gchscp">Glasgow City Health and Social Care Partnership</option>
-											<option value="ns">Neighbourhood Sustainability</option>
-										</select>
-									</div>
-								</div>
 
 								<div class="p-1">
 									<label class="form-title">
-										By school
+										Name
 									</label>
 									<div class="form-field styled-select slate form-field">
 										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of schools" id="selectSchool" name="selectSchool" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchool">
@@ -835,6 +794,50 @@
 											<option value="Battlefield Primary School">Battlefield Primary School</option>
 											<option value="Bellahouston Academy">Bellahouston Academy</option>
 											<option value="Blackfriars Primary Schoo">Blackfriars Primary School</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="p-1">
+									<label class="form-title">
+										Area
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school areas" id="selectSchoolArea" name="selectSchoolArea" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolArea">
+											<option value="allAreas" data-select2-id="select2-data-13-d990">All areas</option>
+											<option value="nwArea">North West</option>
+											<option value="neArea">North East</option>
+											<option value="sArea">South</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="p-1">
+									<label class="form-title">
+										Sector
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school sectors" id="selectSchoolSector" name="selectSchoolSector" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolSector">
+											<option value="allSectors" data-select2-id="select2-data-17-m2rn">All sectors</option>
+											<option value="primarySectors">All Primary Schools</option>
+											<option value="secondarySectors">All Secondary Schools</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="p-1">
+									<label class="form-title">
+										Learning Community
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of learning communities" id="selectSchoolLearningCommunities" name="selectSchoolLearningCommunities" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolLearningCommunities">
+											<option value="allLC" data-select2-id="select2-data-25-j7rb">All learning communites</option>
+											<option value="ce">Chief Executives</option>
+											<option value="drs">Development Regeneration Services</option>
+											<option value="edu">Education Services</option>
+											<option value="fin">Finance</option>
+											<option value="gchscp">Glasgow City Health and Social Care Partnership</option>
+											<option value="ns">Neighbourhood Sustainability</option>
 										</select>
 									</div>
 								</div>

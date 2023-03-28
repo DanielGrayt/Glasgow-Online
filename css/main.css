@@ -2516,6 +2516,21 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles #schoolSearchTile #tile-thumb{
 	text-align: center;
+	margin-bottom: 20px;
+}
+
+#homepage-tiles #schoolSearchTile .tile-title{
+	padding: 0;
+}
+
+#homepage-tiles #schoolSearchTile h1{
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue Bold', 'Arial', "sans-serif";
+	font-weight: 700;
+	margin-bottom: 24px;
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 40px;
 }
 
 #homepage-tiles #schoolSearchForm .p-1{
@@ -2523,10 +2538,33 @@ a.most-visited-pages-btn:hover p>span{
 	margin-bottom:15px;
 }
 
+#homepage-tiles #schoolSearchTile .form-title{
+	font-size: 1.25em;
+	font-family: 'Helvetica Neue Regular', 'Arial', "sans-serif";
+	font-weight: 500;
+}
+
+#homepage-tiles #schoolSearchTile .form-field{
+	margin: 8px auto 24px auto;
+}
+
 #homepage-tiles #schoolSearchForm select{
-	width:50%;
+	width:100%;
 	min-width: 260px;
-	min-height: 40px;
+}
+
+#homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single{
+	border-color: #fff;
+	border-radius: 0px;
+	height: 40px;
+}
+
+#homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height: 40px;
+}
+
+#homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single .select2-selection__arrow{
+	height: 40px;
 }
 
 #homepage-tiles #schoolSearchForm button[type="submit"] {
@@ -2535,6 +2573,11 @@ a.most-visited-pages-btn:hover p>span{
 	background: #00854B;
 	margin-top: 16px;
 	border:2px solid white;
+	width: 100%;
+	font-size: 1.25em;
+	font-family: 'Helvetica Neue Bold', 'Arial', "sans-serif";
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 #homepage-tiles #schoolSearchForm button[type="submit"]>span {
