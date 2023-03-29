@@ -2446,6 +2446,17 @@ a.most-visited-pages-btn:hover p>span{
 	}
 }
 
+@media (min-width: 1084px){
+	#homepage-tiles>li:nth-child(10n+2) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+4) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+7) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+9) .tile-wrapper {
+		width: 50%;
+		float: left;
+		padding: 0 3vw;
+	}
+}
+
 #homepage-tiles>li:nth-child(10n+2) .tile-title h1, 
 #homepage-tiles>li:nth-child(10n+4) .tile-title h1, 
 #homepage-tiles>li:nth-child(10n+7) .tile-title h1,  
