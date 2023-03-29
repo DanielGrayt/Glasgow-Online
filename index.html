@@ -24,7 +24,7 @@
 	<link type="text/css" rel="Stylesheet" media="screen" href="css/CarouselStyles.css" />
 </head>
 
-<body>
+<body id="homepage">
 	
 	<!--Cookie banner-->
 	<div class="cookie-banner">
@@ -669,12 +669,11 @@
 
 
 			<!-- Square tile -->
-			<li class="fade-in-element">
-				<div class="tile black">
+			<li class="fade-in-element tile">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/iStock-639407592.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
@@ -690,134 +689,96 @@
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Rectangle tile -->
-			<li class="fade-in-element">
-				<div class="tile">
+			<li class="fade-in-element tile dark">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/GO_banner.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
+							<div class="tile-badge">Resource update</div>
 							<div class="tile-title">
-								<h1>Supporting Young Carers</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								A young carer is someone under 18 who helps look after someone in their family, or a friend, who is ill, disabled or…
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Young Carers</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Square tile -->
-			<li class="fade-in-element">
-				<div class="tile white">
-					<a href="SectionTemplate(StaffDevelopment).html" title="Go to Staff Development Update" target="_self">
-						<div class="tile-image" style="background-image: url('images/iStock-1128666909.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+			<li class="slide tile light">
+				<!-- <div class="tile black"> -->
+					<a href="#">
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
+							<div class="tile-badge">Page update</div>
 							<div class="tile-title">
-								<h1>Policy &amp; Guidelines</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								All documentation relevant to Staff Development Policies and Guidelines
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Staff Development</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Rectangle -->
-			<li class="fade-in-element">
-				<div class="tile">
+			<li class="slide tile light">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/iStock-478438526.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
-					
 					<div class="tile-container">
 						<div class="tile-wrapper">
+							<div class="tile-badge">New page</div>
 							<div class="tile-title">
-								<h1>Languages</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								New art competition sees schools tackle hate crimre - closing date Thursday 26 September
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Languages</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
 			<!-- Full size tile -->
-			<li class="fade-in-element" id="schoolSearchTile">
-				<div class="tile white">
-					<div class="tile-image" style="background-image: url('images/SchoolSearch1.png');"></div>
-					<div class="tile-gradiant"></div>
-					<div class="tile-container">
-						<div class="tile-wrapper">
+			<li class="slide tile fullTile" id="schoolSearchTile">
+				<div class="tile-container heroItem f-x-left f-y-center">
+					<picture alt="School Search" class="tile-image">
+						<source media="(min-width: 1083px)" srcset="images/SchoolDirectoryTile(Desktop).png">
+						<source media="(min-width: 575px)" srcset="images/SchoolDirectoryTile(Tablet).png">
+						<img src="images/SchoolDirectory(Desktop).png"  alt="School Search">
+					</picture>
+					<div>
+						<div class="tile-wrapper copy">
+							<div id="tile-thumb"><img src="images/SchoolSearchIcon(white).svg" alt="School Directory icon" /></div>
 							<div class="tile-title">
 								<h1>School Search</h1>
 							</div>
 							<form action="post" id="schoolSearchForm">
-								<div class="p-1">
-									<label class="form-title">
-										By school area
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school areas" id="selectSchoolArea" name="selectSchoolArea" required="" style="width: 50%;" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolArea">
-											<option value="" data-select2-id="select2-data-13-d990">All areas</option>
-											<option value="ce">North West</option>
-											<option value="drs">North East</option>
-											<option value="edu">South</option>
-										</select>
-									</div>
-								</div>
-								<div class="p-1">
-									<label class="form-title">
-										By school sector
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school sectors" id="selectSchoolSector" name="selectSchoolSector" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolSector">
-											<option value="" data-select2-id="select2-data-17-m2rn">All sectors</option>
-											<option value="Primary">All Primary Schools</option>
-											<option value="Secondary">All Secondary Schools</option>
-										</select>
-									</div>
-								</div>
-								<div class="p-1">
-									<label class="form-title">
-										By learning community
-									</label>
-									<div class="form-field styled-select slate form-field">
-										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of learning communities" id="selectSchoolLearningCommunities" name="selectSchoolLearningCommunities" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolLearningCommunities">
-											<option value="" data-select2-id="select2-data-25-j7rb">All learning communites</option>
-											<option value="ce">Chief Executives</option>
-											<option value="drs">Development Regeneration Services</option>
-											<option value="edu">Education Services</option>
-											<option value="fin">Finance</option>
-											<option value="gchscp">Glasgow City Health and Social Care Partnership</option>
-											<option value="ns">Neighbourhood Sustainability</option>
-										</select>
-									</div>
-								</div>
 
 								<div class="p-1">
 									<label class="form-title">
-										By school
+										Name
 									</label>
 									<div class="form-field styled-select slate form-field">
 										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of schools" id="selectSchool" name="selectSchool" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchool">
@@ -838,7 +799,51 @@
 									</div>
 								</div>
 
-								<button type="submit" class="tile-button"><span><a href="SchoolDirectory.html" style="color:black;">Search</a></span></button>
+								<div class="p-1">
+									<label class="form-title">
+										Area
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school areas" id="selectSchoolArea" name="selectSchoolArea" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolArea">
+											<option value="allAreas" data-select2-id="select2-data-13-d990">All areas</option>
+											<option value="nwArea">North West</option>
+											<option value="neArea">North East</option>
+											<option value="sArea">South</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="p-1">
+									<label class="form-title">
+										Sector
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of school sectors" id="selectSchoolSector" name="selectSchoolSector" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolSector">
+											<option value="allSectors" data-select2-id="select2-data-17-m2rn">All sectors</option>
+											<option value="primarySectors">All Primary Schools</option>
+											<option value="secondarySectors">All Secondary Schools</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="p-1">
+									<label class="form-title">
+										Learning Community
+									</label>
+									<div class="form-field styled-select slate form-field">
+										<select class="js-example-basic-single select2-hidden-accessible" data-val="true" data-val-number="List of learning communities" id="selectSchoolLearningCommunities" name="selectSchoolLearningCommunities" required="" tabindex="-1" aria-hidden="true" data-select2-id="select2-data-selectSchoolLearningCommunities">
+											<option value="allLC" data-select2-id="select2-data-25-j7rb">All learning communites</option>
+											<option value="ce">Chief Executives</option>
+											<option value="drs">Development Regeneration Services</option>
+											<option value="edu">Education Services</option>
+											<option value="fin">Finance</option>
+											<option value="gchscp">Glasgow City Health and Social Care Partnership</option>
+											<option value="ns">Neighbourhood Sustainability</option>
+										</select>
+									</div>
+								</div>
+
+								<button type="submit" class="tile-button"><span>Search</span></button>
 							</form>
 						</div>
 					</div>
@@ -846,99 +851,93 @@
 			</li>
 
 			<!-- Square tile -->
-			<li class="slide">
-				<div class="tile black">
+			<li class="slide tile black">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/iStock-639407592.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
 							<div class="tile-title">
-								<h1>Digital Learning Update</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								Keep up to date with all the Digital Learning Updates.
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Digital Learning update</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
-			<!-- Rectangle tile -->
-			<li class="slide">
-				<div class="tile">
+			<li class="slide tile black">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/GO_banner.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
 							<div class="tile-title">
-								<h1>Supporting Young Carers</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								A young carer is someone under 18 who helps look after someone in their family, or a friend, who is ill, disabled or…
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Young Carers</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
-			<!-- Square tile -->
-			<li class="slide">
-				<div class="tile white">
+			<li class="slide tile black">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/iStock-1128666909.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
 							<div class="tile-title">
-								<h1>Policy &amp; Guidelines</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								All documentation relevant to Staff Development Policies and Guidelines
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Staff Development</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
-			<!-- Rectangle -->
-			<li class="slide">
-				<div class="tile">
+			<li class="slide tile black">
+				<!-- <div class="tile black"> -->
 					<a href="#">
-						<div class="tile-image" style="background-image: url('images/iStock-478438526.png');">
-							<div class="tile-gradiant"></div>
-						</div>
+						<div class="tile-gradiant"></div>
+						<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
 					</a>
 					<div class="tile-container">
 						<div class="tile-wrapper">
 							<div class="tile-title">
-								<h1>Languages</h1>
+								<h1>Tile's title</h1>
 							</div>
 							<div class="tile-summary">
-								New art competition sees schools tackle hate crimre - closing date Thursday 26 September
+								<p>Tile's summary over two lines. This self-evaluation and improvement framework can be used to stimulate dialogue and action towards a whole setting approach to STEM.</p>
 							</div>
 							<a href="#" class="tile-button">
-								<span>Go to Languages</span>
+								<span>Call to Action text</span>
 							</a>
 						</div>
 					</div>
-				</div>
+				<!-- </div> -->
 			</li> <!-- End tile -->
+
 			<!-- Full size tile -->
-			<li class="slide" id="social-tile">
+			<!-- <li class="slide" id="social-tile">
 				<div class="tile black">
 					<div class="tile-image" style="background-image: url('images/ConnectWithGCCTile.png');"></div>
 					<div class="tile-container">
@@ -956,7 +955,33 @@
 						</div>
 					</div>
 				</div>
-			</li>
+			</li> -->
+			<li class="slide tile fullTile" id="newsTile">
+				<!-- <a href="#">
+					<div class="tile-gradiant"></div>
+					<div class="tile-image"><img src="Images/CarouselTabletNews.png" alt="tile title" /></div>
+				</a> -->
+				<div class="tile-container heroItem f-x-right f-y-center">
+					<picture alt="Latest on GO" class="tile-image">
+						<source media="(min-width: 1083px)" srcset="images/NewsTile(Desktop).png">
+						<source media="(min-width: 575px)" srcset="images/NewsTile(Tablet).png">
+						<img src="images/NewsTile(Desktop).png"  alt="Latest on GO">
+					</picture>
+					<div>
+						<div class="tile-wrapper copy">
+							<div class="tile-title">
+								<h1>Latest on GO</h1>
+							</div>
+							<div class="tile-summary">
+								<p>Keep up to date with news from our schools, corporate announcements and internal vacancies</p>
+							</div>
+							<a href="#" class="tile-button">
+								<span>Browse now</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</li> 
 
 
 		</ul><!-- End homepage tiles -->
