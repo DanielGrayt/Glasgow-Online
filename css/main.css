@@ -2404,19 +2404,39 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles>li:nth-child(10n+2) .tile-wrapper, 
 #homepage-tiles>li:nth-child(10n+4) .tile-wrapper, 
-#homepage-tiles>li:nth-child(10n+9) .tile-wrapper, 
-#homepage-tiles>li:nth-child(10n+7) .tile-wrapper {
+#homepage-tiles>li:nth-child(10n+7) .tile-wrapper, 
+#homepage-tiles>li:nth-child(10n+9) .tile-wrapper {
 	position: relative;
 	top: calc(50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-	padding: 0 3vw;
 	color: white;
-	width: 50%;
-	float: left;
 }
 
-#homepage-tiles>li:nth-child(10n+2) .tile-title h1, #homepage-tiles>li:nth-child(10n+4) .tile-title h1,  #homepage-tiles>li:nth-child(10n+9) .tile-title h1, #homepage-tiles>li:nth-child(10n+7) .tile-title h1{
+@media (min-width: 1084px){
+	#homepage-tiles>li:nth-child(10n+2) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+4) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+7) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+9) .tile-wrapper {
+		width: 50%;
+		float: left;
+		padding: 0 3vw;
+	}
+}
+
+@media (max-width: 1083px){
+	#homepage-tiles>li:nth-child(10n+2) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+4) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+7) .tile-wrapper, 
+	#homepage-tiles>li:nth-child(10n+9) .tile-wrapper {
+		padding: 40px 3vw;
+	}
+}
+
+#homepage-tiles>li:nth-child(10n+2) .tile-title h1, 
+#homepage-tiles>li:nth-child(10n+4) .tile-title h1, 
+#homepage-tiles>li:nth-child(10n+7) .tile-title h1,  
+#homepage-tiles>li:nth-child(10n+9) .tile-title h1{
 	font-size: 25.5pt;
 }
 
@@ -2431,11 +2451,20 @@ a.most-visited-pages-btn:hover p>span{
 }
 
 #homepage-tiles .tile-summary{
-	font-size: 1.25rem;
+	font-size: 1.25rem; 
 	line-height: 1.5rem;
 	padding:24px 0 4px 0;
 	font-family: 'Helvetica Neue Regular';
 	font-weight: 500;
+}
+
+@media (min-width: 1084px){
+	#homepage-tiles>li:nth-child(10n+2) .tile-summary, 
+	#homepage-tiles>li:nth-child(10n+4) .tile-summary,  
+	#homepage-tiles>li:nth-child(10n+9) .tile-summary, 
+	#homepage-tiles>li:nth-child(10n+7) .tile-summary{
+		font-size: 12pt;
+	}
 }
 
 #homepage-tiles .tile-button{
@@ -2509,14 +2538,29 @@ a.most-visited-pages-btn:hover p>span{
 
 
 #homepage-tiles #schoolSearchTile .tile-container{
-	height: 41.48vw;
+	/* height: 41.48vw;
 	background-size: cover;
-	margin: 2px 0;
+	margin: 2px 0; */
 }
 
 #homepage-tiles #schoolSearchTile #tile-thumb{
 	text-align: center;
 	margin-bottom: 20px;
+}
+
+#homepage-tiles #schoolSearchTile #tile-thumb>img{
+	max-height: 56px;
+}
+
+@media (max-width: 1280px){
+	#homepage-tiles #schoolSearchTile.tile.fullTile .heroItem > div{
+		left: 0;
+	}
+
+	#homepage-tiles #schoolSearchTile #tile-thumb{
+		display: none;
+	}
+
 }
 
 #homepage-tiles #schoolSearchTile .tile-title{
@@ -2527,15 +2571,38 @@ a.most-visited-pages-btn:hover p>span{
 	text-transform: uppercase;
 	font-family: 'Helvetica Neue Bold', 'Arial', "sans-serif";
 	font-weight: 700;
-	margin-bottom: 24px;
+	margin-bottom: 1.5rem;
 	font-size: 2.5em;
 	text-align: center;
 	line-height: 40px;
+	width: 100%;
 }
 
 #homepage-tiles #schoolSearchForm .p-1{
 	padding:0 !important;
 	margin-bottom:15px;
+}
+
+@media (max-width: 1083px){
+	#homepage-tiles #schoolSearchTile.tile.fullTile .heroItem > div{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#homepage-tiles #schoolSearchTile.tile.fullTile .heroItem.f-x-left .copy{
+		width: 100%;
+		top: 25%;
+	}
+
+	#schoolSearchForm{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#homepage-tiles #schoolSearchForm .p-1{
+		width: 50%;
+		padding: 0 1rem !important;
+	}
 }
 
 #homepage-tiles #schoolSearchTile .form-title{
@@ -2545,36 +2612,37 @@ a.most-visited-pages-btn:hover p>span{
 }
 
 #homepage-tiles #schoolSearchTile .form-field{
-	margin: 8px auto 24px auto;
+	margin: 0.5rem auto 1rem auto;
 }
 
 #homepage-tiles #schoolSearchForm select{
-	width:100%;
+	width:100% !important;
 	min-width: 260px;
 }
 
 #homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single{
 	border-color: #fff;
 	border-radius: 0px;
-	height: 40px;
+	height: 30px;
 }
 
 #homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single .select2-selection__rendered{
-	line-height: 40px;
+	line-height: 30px;
 }
 
 #homepage-tiles #schoolSearchForm .select2-container--default .select2-selection--single .select2-selection__arrow{
-	height: 40px;
+	height: 30px;
 }
 
 #homepage-tiles #schoolSearchForm button[type="submit"] {
-	padding: 5px 20px 5px 22px;
+	padding: 7px 20px 7px 22px;
 	color: white;
 	background: #00854B;
-	margin-top: 16px;
+	margin-top: 0.5rem;
 	border:2px solid white;
 	width: 100%;
-	font-size: 1.25em;
+	/* font-size: 1.25em; */
+	line-height: 1;
 	font-family: 'Helvetica Neue Bold', 'Arial', "sans-serif";
 	font-weight: 700;
 	text-transform: uppercase;
@@ -2582,8 +2650,6 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles #schoolSearchForm button[type="submit"]>span {
 	display:inline-block;
-	padding:2px 0;
-	border-bottom:2px solid transparent;
 }
 
 #homepage-tiles #schoolSearchForm button[type="submit"]>span>a{
@@ -2605,22 +2671,33 @@ a.most-visited-pages-btn:hover p>span{
 }
 
 #homepage-tiles .tile .heroItem{
-	height: 42.25vw;
-	background-size: cover;
-	margin: 2px 0;
-}
-
-#homepage-tiles .tile .heroItem{
 	position: relative;
 	overflow: hidden;
 	padding: 0 5%;
 	width: 100%;
 }
 
+
+
+#homepage-tiles .tile .heroItem::before{
+	display: block;
+	content: "";
+	width: 100%;
+	padding-bottom: 61.875%;
+}
+
 @media (min-width: 1921px){
 	#homepage-tiles .tile .heroItem{
 		max-width: 1920px !important;
 		height: 812px !important;
+	}
+}
+
+@media (min-width: 1084px){
+	#homepage-tiles .tile .heroItem{
+		height: 41.48vw;
+		background-size: cover;
+		margin: 2px 0;
 	}
 }
 
@@ -2658,8 +2735,27 @@ a.most-visited-pages-btn:hover p>span{
 	overflow: hidden;
 }
 
-#homepage-tiles .tile.fullTile .heroItem>div{
-	left: 120px;
+@media (min-width: 1084px){
+
+	#homepage-tiles .tile .heroItem>div{
+		left: 120px;
+	}
+
+}  
+@media (min-width: 768px) and (max-width: 1083px) {
+	#homepage-tiles .tile .heroItem>div {
+		margin-left: -25px;
+		padding: 0px;
+	}
+}
+
+  @media screen and (max-width: 1083px) {
+	#homepage-tiles .tile .heroItem>div {
+		height: 320px;
+		overflow: visible;
+		text-align: left;
+		position: relative;
+	}
 }
 
 #homepage-tiles .tile .heroItem.f-y-center .tile-wrapper{
@@ -2667,7 +2763,18 @@ a.most-visited-pages-btn:hover p>span{
 	top: calc(50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
-}
+	position: absolute;
+	z-index: 1;
+	max-width: 520px;
+} 
+
+ @media screen and (max-width: 1083px){
+	#homepage-tiles .tile .heroItem.f-y-center .tile-wrapper {
+		right: auto;
+		max-width: none;
+		padding: 16px 12px;
+	}
+ }
 
 #homepage-tiles .tile .heroItem.f-x-right .tile-wrapper{
 	right:0;
@@ -2701,8 +2808,8 @@ a.most-visited-pages-btn:hover p>span{
 }
 
 #homepage-tiles #newsTile .tile-title h1{
-	font-family: 'Helvetica Neue Regular', Arial, "sans-serif";
-	font-size: 46px;
+	font-family: 'Helvetica Neue Bold', 'Arial', "sans-serif";
+	font-size: 2.5em;
 	line-height: 56px;
 	padding: 3px 0;
 	margin: 0;
