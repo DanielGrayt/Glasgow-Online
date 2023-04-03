@@ -2188,6 +2188,13 @@ a.most-visited-pages-btn:hover p>span{
 	font-size: 34.5pt;
 }
 
+#homepage-tiles>li:nth-child(10n+1) .tile-gradiant,
+#homepage-tiles>li:nth-child(10n+3) .tile-gradiant,
+#homepage-tiles>li:nth-child(10n+6) .tile-gradiant,
+#homepage-tiles>li:nth-child(10n+8) .tile-gradiant {
+	background: linear-gradient( 0deg, rgba(0,0,0,100) 40%, rgba(0,0,0,0) 100% );
+  }
+
 #homepage-tiles>li:nth-child(10n+1) .tile-container, 
 #homepage-tiles>li:nth-child(10n+3) .tile-container, 
 #homepage-tiles>li:nth-child(10n+6) .tile-container, 
@@ -2272,6 +2279,7 @@ a.most-visited-pages-btn:hover p>span{
 	#homepage-tiles>li:nth-child(10n+7) .tile-image img,
 	#homepage-tiles>li:nth-child(10n+9) .tile-image img{
 		transition: all 0.3s;
+		max-width: none;
 	}
 	
 	#homepage-tiles>li:nth-child(10n+2) .tile-image:hover img,
@@ -2489,6 +2497,8 @@ a.most-visited-pages-btn:hover p>span{
 	font-weight: 900;
 	font-family: 'Helvetica Neue Bold';
 	background: transparent;
+	margin-top: 1rem;
+	text-transform: uppercase;
 }
 
 #homepage-tiles .tile-button:hover{
