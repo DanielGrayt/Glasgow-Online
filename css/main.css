@@ -4702,6 +4702,17 @@ youtube>iframe{
 	max-width: 820px;
 }
 
+.submitAStory .quote-heading,
+.submitAStory .footer-heading{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.submitAStory .quote-content,
+.submitAStory .footer-content{
+	display: none;
+}
+
 .submitAStory#section-template form .floatleft,
 .submitAStory#section-template form .floatleft{
 	float: none;
@@ -4713,6 +4724,11 @@ youtube>iframe{
 
 .submitAStory .floatleft label{
 	position: relative;
+}
+
+.submitAStory .field-validation-valid{
+	color:red;
+	float: left;
 }
 
 .submitAStory li label{

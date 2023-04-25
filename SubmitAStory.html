@@ -876,7 +876,7 @@
 
 
 
-            <li class="floatright">
+            <!-- <li class="floatright">
 
                 <label for="TileSummary">Subheading<span class="field-validation-valid" data-valmsg-for="TileSummary" data-valmsg-replace="false">*</span></label><br />
 
@@ -885,7 +885,7 @@
 
                 
 
-            </li>
+            </li> -->
 
             <li class="clear"></li>
 
@@ -966,7 +966,7 @@
 <option value="12">Scotland&#39;s Census 2022</option>
 
 <option value="8">Scottish SPCA</option>
-
+p
 <option value="25">St. Andrew&#39;s Day 2021</option>
 
 <option value="11">Staff Development</option>
@@ -1053,12 +1053,13 @@
 			
 			<hr>
 			
-			<h3>Insert quote (Optional)</h3>
-			<p>If your story includes a quote, fill in the details below.</p>
-
+			<h3 class="quote-heading">Insert quote (Optional)</h3>
+			<p>Click to add a quote to your article.</p>
+            
+            <div class="quote-content">
             <li class="floatleft">
 
-                <label for="QuoteMessage">Quote Message<span class="field-validation-valid" data-valmsg-for="QuoteMessage" data-valmsg-replace="false">*</span></label><br />
+                <label for="QuoteMessage">Quote Message<!-- <span class="field-validation-valid" data-valmsg-for="QuoteMessage" data-valmsg-replace="false">*</span>--></label><br />
 
                 <input id="QuoteMessage" name="QuoteMessage" type="text" value="" />
 
@@ -1070,7 +1071,7 @@
 
             <li class="floatright">
 
-                <label for="QuoteAuthor">Quote Author<span class="field-validation-valid" data-valmsg-for="QuoteAuthor" data-valmsg-replace="false">*</span></label><br />
+                <label for="QuoteAuthor">Quote Author<!-- <span class="field-validation-valid" data-valmsg-for="QuoteAuthor" data-valmsg-replace="false">*</span>--></label><br />
 
                 <input data-val="true" data-val-maxlength="Quote Author too long" data-val-maxlength-max="100" id="QuoteAuthor" name="QuoteAuthor" type="text" value="" />
 
@@ -1084,7 +1085,7 @@
 
             <li class="floatleft">
 
-                <label for="QuoteAuthorJobTitle">Quote Author's Job Title<span class="field-validation-valid" data-valmsg-for="QuoteAuthorJobTitle" data-valmsg-replace="false">*</span></label><br />
+                <label for="QuoteAuthorJobTitle">Quote Author's Job Title<!-- <span class="field-validation-valid" data-valmsg-for="QuoteAuthorJobTitle" data-valmsg-replace="false">*</span>--></label><br />
 
                 <input data-val="true" data-val-maxlength="Quote Author Job Title too long" data-val-maxlength-max="100" id="QuoteAuthorJobTitle" name="QuoteAuthorJobTitle" type="text" value="" />
 
@@ -1096,7 +1097,7 @@
 
             <li class="floatright">
 
-                <label for="QuoteAuthorLocation">Quote Author's Location<span class="field-validation-valid" data-valmsg-for="QuoteAuthorLocation" data-valmsg-replace="false">*</span></label><br />
+                <label for="QuoteAuthorLocation">Quote Author's Location<!-- <span class="field-validation-valid" data-valmsg-for="QuoteAuthorLocation" data-valmsg-replace="false">*</span>--></label><br />
 
                 <input data-val="true" data-val-maxlength="Quote Author Location too long" data-val-maxlength-max="100" id="QuoteAuthorLocation" name="QuoteAuthorLocation" type="text" value="" />
 
@@ -1107,27 +1108,43 @@
 
 
             <li class="clear"></li>
-			
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".quote-heading").click(function(){
+                    $(".quote-content").toggle(500);
+                });
+                });
+
+        </script>
 			
 			<hr>
-
+        
 
             <li>
 
-                <label for="Footer">Footer<span class="field-validation-valid" data-valmsg-for="Footer" data-valmsg-replace="false">*</span></label><br />
+                <label for="Footer"><h3 class="footer-heading">Footer (Optional)<!-- <span class="field-validation-valid" data-valmsg-for="Footer" data-valmsg-replace="false">*</span>--></h3></label><br /> 
+                <p>Click to add an endnote, call to action, additional images</p>
+                <div class="footer-content">
+                    <textarea class="ckeditor" cols="20" id="Footer" name="Footer" rows="2">
 
-                <textarea class="ckeditor" cols="20" id="Footer" name="Footer" rows="2">
+				    </textarea>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $(".footer-heading").click(function(){
+                            $(".footer-content").toggle(500);
+                        });
+                        });
 
-				</textarea>
-
-                
+                </script>
 
             </li>
 
 
 
             <li class="clear"></li>
-
+        
 
 
             <!--<li class="floatleft">
