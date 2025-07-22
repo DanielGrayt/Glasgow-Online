@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="dark mac">
+<head>	
+    <title>Image Cropper</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
+    <!-- custom styles -->
+    <link href="https://unpkg.com/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://unpkg.com/bootstrap-icons@1/font/bootstrap-icons.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://unpkg.com/bootstrap@5/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <link href="css/cropper.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+      <cropper-canvas background height="800">
+        <cropper-image src="https://fengyuanchen.github.io/cropperjs/picture.jpg" alt="Picture" rotatable scalable skewable translatable></cropper-image>
+        <cropper-shade hidden></cropper-shade>
+        <cropper-handle action="select" plain></cropper-handle>
+        <cropper-selection initial-coverage="0.5" movable resizable>
+          <cropper-grid role="grid" bordered covered></cropper-grid>
+          <cropper-crosshair centered></cropper-crosshair>
+          <cropper-handle action="move" theme-color="rgba(255, 255, 255, 0.35)"></cropper-handle>
+          <cropper-handle action="n-resize"></cropper-handle>
+          <cropper-handle action="e-resize"></cropper-handle>
+          <cropper-handle action="s-resize"></cropper-handle>
+          <cropper-handle action="w-resize"></cropper-handle>
+          <cropper-handle action="ne-resize"></cropper-handle>
+          <cropper-handle action="nw-resize"></cropper-handle>
+          <cropper-handle action="se-resize"></cropper-handle>
+          <cropper-handle action="sw-resize"></cropper-handle>
+        </cropper-selection>
+      </cropper-canvas>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="cropper.min.js"></script>
+
+</body>
+</html>
