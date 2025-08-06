@@ -555,6 +555,7 @@ header ul, #footer ul {
 b, strong {
     font-weight: 700;
     font-style: normal;
+	font-family: 'Helvetica Neue Bold';
 }
 
 @media screen and (min-width: 841px) {
@@ -657,6 +658,7 @@ b, strong {
 body>header {
     margin: 0 auto;
 	max-width: 1230px;
+	color: #262626;
 }
 
 #header-wrapper {
@@ -743,6 +745,7 @@ header a {
 
 body>header{
 	font-size: 10.5pt;
+	font-size: 9.75pt;
 	width: 100vw;
 	max-width: 100vw;
 	background-color: white;
@@ -817,6 +820,7 @@ header a:visited{
 
 #header-logo > a > img{
 	margin-right:6px;
+	vertical-align: middle;
 }
 
 #header-wrapper.secondaryActive > a > img{
@@ -913,7 +917,7 @@ header a:visited{
       nav .knob {
         display: none; } }
   .nav-ul{
-	font-size:0; }
+	/* font-size:0; */ }
   @media (max-width: 650px) {
     .nav__dropdown {
       right: auto;
@@ -964,7 +968,7 @@ nav.priority-nav{ animation: reduce-nav-flashing 0.5s ease; }
 }
 
 .nav-button-wrapper li>a, .nav-button-wrapper button, .nav__dropdown-toggle{
-	font-size: 13px;
+	font-size: 9.75pt;
 }
 
 .nav-button-wrapper li>a::before{
@@ -972,13 +976,13 @@ nav.priority-nav{ animation: reduce-nav-flashing 0.5s ease; }
 }
 
 .nav-button-wrapper button, .nav__dropdown-toggle{
-	padding: 16px 30px 16px 12px;
+	padding: 14px 30px 18px 12px;
 	border: 0;
 	background: transparent;
 	text-align: left;
 	position: relative;
 	border-radius: 0;
-	vertical-align: baseline;
+	vertical-align: middle;
 }
 
 .nav__dropdown-toggle::after{
@@ -1158,7 +1162,7 @@ nav.priority-nav .single-link.new a::before{
 	}
 	
 	.nav-button-wrapper button::after, .nav__dropdown-toggle::after {
-    	top:23px;
+    	top:22px;
 		font-size: 10pt;
 	}
 
@@ -1555,7 +1559,7 @@ nav.priority-nav .single-link.new a::before{
 .adminOptions>div>a{
 	padding:0 5px;
 	line-height:1;
-	color:#596470;
+	color:#000;
 }
 
 .adminOptions>div>a>span{
@@ -1563,11 +1567,11 @@ nav.priority-nav .single-link.new a::before{
 }
 
 .adminOptions>div>a:hover>span{
-	border-bottom-color:#596470;
+	border-bottom-color:#000;
 }
 
 .adminOptions>div:first-child>a{
-	border-right:1px solid #596470;
+	border-right:1px solid #000;
 }
 
 .adminOptions .userProfilePhoto{
@@ -2165,6 +2169,7 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles li.fullTile{
 	width:100%;
+	padding: 0;
 }
 
 #homepage-tiles>li.fade-in-element{
@@ -2570,6 +2575,83 @@ a.most-visited-pages-btn:hover p>span{
 
 /* Custom/Static tile styles */
 
+/*photobanner*/
+ 
+.photobanner {
+	height: calc(41.48vw/8);
+	width: 1260px;
+	width: 100vw;
+	overflow: hidden;
+	padding-bottom: 3px;
+}
+
+.photobanner.large {
+	height: calc(41.48vw/4);
+}
+
+.photobanner img {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+
+/*keyframe animations*/
+.photobanner.first {
+	animation: bannermoveforward 5s linear 0s forwards, bannermovebackward 5s linear 35s forwards;
+}
+
+.photobanner.second {
+	animation: bannermoveforward 5s linear 5s forwards, bannermovebackward 5s linear 40s forwards;
+}
+
+.photobanner.third {
+	animation: bannermoveforward 5s linear 10s forwards, bannermovebackward 5s linear 45s forwards;
+}
+
+.photobanner.fourth {
+	animation: bannermoveforward 5s linear 15s forwards, bannermovebackward 5s linear 50s forwards;
+}
+
+.photobanner.fifth {
+	animation: bannermoveforward 5s linear 20s forwards, bannermovebackward 5s linear 55s forwards;
+}
+
+.photobanner.sixth {
+	animation: bannermoveforward 5s linear 25s forwards, bannermovebackward 5s linear 60s forwards;
+}
+
+.photobanner.seventh {
+	animation: bannermoveforward 5s linear 30s forwards, bannermovebackward 5s linear 65s forwards;
+}
+ 
+@keyframes bannermoveforward {
+	0% {
+		margin-left: 0px;
+	}
+	100% {
+		margin-left:-690px  /*calc(-1260px + 50vw + 6px); */
+	}
+}
+ 
+@keyframes bannermovebackward {
+	0% {
+		margin-left:-690px  /*calc(-1260px + 50vw + 6px); */
+	}
+	100% {
+		margin-left: 0px;
+	}
+}
+
+/* temp styles */
+#homepage-tiles #schoolSearchTile{
+	background-color: #00854B;
+}
+
+#homepage-tiles .fullTile .heroItem.f-x-left .copy{
+	border: 1px solid white;
+}
+
+/* end temp styles */
 
 #homepage-tiles #schoolSearchTile .tile-container{
 	/* height: 41.48vw;
@@ -2599,6 +2681,7 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles #schoolSearchTile .tile-title{
 	padding: 0;
+	text-align: center;
 }
 
 #homepage-tiles #schoolSearchTile h1{
@@ -2607,9 +2690,9 @@ a.most-visited-pages-btn:hover p>span{
 	font-weight: 700;
 	margin-bottom: 1.5rem;
 	font-size: 2.5em;
-	text-align: center;
 	line-height: 40px;
 	width: 100%;
+	max-width: 100% !important;
 }
 
 #homepage-tiles #schoolSearchForm .p-1{
@@ -2731,7 +2814,7 @@ a.most-visited-pages-btn:hover p>span{
 	#homepage-tiles .tile .heroItem{
 		height: 41.48vw;
 		background-size: cover;
-		margin: 2px 0;
+		/*margin: 2px 0;*/
 	}
 }
 
@@ -2816,6 +2899,13 @@ a.most-visited-pages-btn:hover p>span{
 
 #homepage-tiles .tile .heroItem.f-x-left .tile-wrapper{
 	left:0;
+}
+
+#homepage-tiles #photobannercontainer{
+	float: right;
+	right: 0;
+	left: initial;
+	width: 50%;
 }
 
 @media (min-width: 1084px){
@@ -4399,14 +4489,21 @@ youtube>iframe{
 	padding:0;
 }
 
-#teamStructure .accordion .card-header,
-#page .right .accordion .card-header{
+.accordion .card-header{
 	background-color: white;
 	padding:0;
+	font-size: 12pt;
+	color:white;
+	padding: 13px 20px;
+	border:none;
+	border-radius: 0;
 }
 
-#teamStructure .accordion .card-header span,
-#page .right .accordion .card-header span{
+.right .accordion .card-header{
+	padding: 0;
+}
+
+.accordion .card-header span{
 	color: #262626;
 	line-height: 22px;
 	padding: 13px 20px;
@@ -4436,19 +4533,12 @@ youtube>iframe{
 
 .accordion .card{
 	border-radius: 0;
-	border:none;
+	/* border:none; */
 	margin-bottom: 16px;
 }
 
-.accordion .card-header{
-	font-size: 12pt;
-	color:white;
-	padding: 13px 20px;
-	border:none;
-	border-radius: 0;
-}
 
-.accordion .card-header{
+/* .accordion .card-header{
 	background-color: #00854B;
 }
 
@@ -4459,9 +4549,10 @@ youtube>iframe{
 	cursor: pointer;
 	line-height: 1.3;
 	display: block;
-}
+} */
 
-#section-template .card-header span p{
+#section-template .card-header span p,
+#body .card-header span>span{
 	font-family: 'Helvetica Neue Light';
 	font-weight: 400;
 	font-size: 20pt;
@@ -4480,15 +4571,17 @@ youtube>iframe{
 	color:white;
 }
 
-.card-header p {
+.card-header p,
+#body .card-header span>span {
   	transition: .3s transform ease-in-out;
 	transform: rotate(90deg);
-	font-family: 'Helvetica Neue Bold';
+	/* font-family: 'Helvetica Neue Bold'; */
 	padding:0px 0px 5px 0px;
 	display: inline-block;
 }
 
-.card-header .collapsed p {
+.card-header .collapsed p,
+#body .card-header .collapsed>span {
   transform: rotate(0deg);
 	padding: 0px 5px 2px 0;
 }
@@ -7471,7 +7564,7 @@ footer{
 	max-width: 260px;
 	/*width: 33.3333%;
 	padding:36px 0 4px;*/
-	width: 25%;
+	width: 20%;
 	padding:0 12px;
 }
 
