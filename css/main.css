@@ -744,10 +744,10 @@ header a {
 }
 
 body>header{
-	font-size: 10.5pt;
+	/* font-size: 10.5pt; */
 	font-size: 9.75pt;
-	width: 100vw;
-	max-width: 100vw;
+	width: 100%;
+	max-width: 100%;
 	background-color: white;
 	/*margin-bottom:2px;*/
 	height: 54px;
@@ -1154,7 +1154,7 @@ nav.priority-nav .single-link.new a::before{
 	}
 	
 	.nav-button-wrapper > button{
-		white-space: nowrap;
+		margin-right:-10px;
 	}
 	
 	.nav-button-wrapper  button::after, .nav__dropdown-toggle::after {
@@ -1265,8 +1265,8 @@ nav.priority-nav .single-link.new a::before{
 		top:100%;
 		background-color: #f2f2f2;
 		/*width:calc(100vw - 15px) !important;*/
-		width: 100vw;
-		max-width:100vw;
+		width: 100%;
+		max-width:100%;
 		left:-79px;
 		margin-top:0;
 		z-index: 750;
@@ -1849,34 +1849,50 @@ nav.priority-nav .single-link.new a::before{
 }
 
 .carousel-caption .carousel-heading{
-	font-size: 46px;
-	line-height: 56px;
-	padding:3px 0;
+	font-size: 62px;
+	line-height: 72px;
+	padding:6px 0;
 	margin:0;
 	letter-spacing:  -.01em;
 	font-family: 'Helvetica Neue Bold';
+	font-weight: 700;
 	color: inherit;
 }
 
-@media (max-width: 1084px) {
+@media (max-width: 1083px) {
 	.carousel-caption .carousel-heading{
-		max-width:100%;
 		font-size: 46px;
-		line-height: 58px;
+		line-height: 46px;
 	}
 }
 
 .carousel-caption .carousel-subheading{
 	font-size: 34px;
 	line-height: 40px;
-	padding:12px 0 2px 0;
+	padding:12px 0 2px;
 	font-family: 'Helvetica Neue Regular';
 	color: inherit;
 }
 
-@media (max-width: 1084px) {
-	.carousel-caption .carousel-heading{
-		max-width:100%;
+@media screen and (max-width: 1400px) and (min-width: 1200px){
+	.carousel-caption .carousel-subheading{
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1084px){
+	.carousel-caption .carousel-subheading{
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width:767px){
+	.carousel-caption .carousel-subheading{
+		font-size: 26px;
+		line-height: 32px;
+		padding: 9px 0 3px;
 	}
 }
 
@@ -1885,9 +1901,8 @@ nav.priority-nav .single-link.new a::before{
 	color: #054b16;;
 	display: inline-block;
 	margin-top: 40px;
-	;
-	padding: 7px 20px 7px 22px;
-	line-height: 18.5px;
+	padding: 5px 20px 5px 22px;
+	line-height: 1.3;
 	font-size: 15px;
 	text-transform: uppercase;
 	font-family: 'Helvetica Neue Bold';
@@ -1902,15 +1917,15 @@ nav.priority-nav .single-link.new a::before{
 .carousel-btn>span{
 	border-bottom: none;
 	padding-bottom: 0;
-	display: block;
+	display: inline-block;
 }
 
 .carousel-btn:hover>span{
-	border-bottom-color: transparent;;
+	border-bottom-color: transparent;
 	box-shadow: 0 3px 0 -1px #054b16;
 }
 
-.carousel-btn>span:after {
+.carousel-btn::after {
     margin-top: -1.5px;
     margin-left: 10px;
     display: inline-block;
@@ -2097,7 +2112,7 @@ a.most-visited-pages-btn{
 }
 
 .most-visited-pages-btn:last-child{
-	margin-right: 0;
+	margin-right: 0; 
 }
 
 .most-visited-pages-btn>div>div{
@@ -2111,7 +2126,7 @@ a.most-visited-pages-btn{
 
 .most-visited-pages-btn p{
 	margin-top: 6px;
-	font-family: 'Helvetica Neue Medium';
+	font-family: 'Helvetica Neue Bold';
 	text-transform: uppercase;
 	font-size: 15px;
 	line-height: 23px;
